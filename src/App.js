@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import Authentication from "./components/pages/authentication/Authentication";
-import NotFound from '../src/components/routes/NotFound';
-import Home from '../src/components/pages/home/Home';
-import Inbox from '../src/components/pages/inbox/Inbox';
-import Projects from '../src/components/pages/projects/Projects';
-import Raport from '../src/components/pages/raport/Raport';
-import Workflow from  '../src/components/pages/workflow/Workflow';
-import PrivateLayout from '../src/components/routes/PrivateLayout';
+import NotFound from './components/routes/NotFound';
+import Home from './components/pages/home/Home';
+import Inbox from './components/pages/inbox/Inbox';
+import Projects from './components/pages/projects/Projects';
+import Raport from './components/pages/raport/Raport';
+import Workflow from  './components/pages/workflow/Workflow';
+import PrivateLayout from './components/routes/PrivateLayout';
 import PublicLayout from "./components/routes/PublicLayout";
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div className="App">
