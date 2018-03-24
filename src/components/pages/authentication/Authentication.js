@@ -7,20 +7,20 @@ import Login from "./login/Login";
 
 const styles = {
     ActiveTab: {
-        backgroundColor: '#2b2d3c',
-        height: 10,
+        backgroundColor: '#2196f3',
+        height: 5,
         marginTop: -10,
-
     },
     Tabs: {
         backgroundColor: '#2f3242',
-        height: '100%',
-        width: 300
+        width: 300,
+        height: "100%"
     },
     TabsFont: {
-        fontSize: 24,
-        lineHeight: 48,
-        textTransform: 'capitalize'
+        fontSize: 20,
+        textTransform: 'capitalize',
+        letterSpacing: 1,
+        height: 85
     },
     AuthCont: {
         maxWidth: 580,
@@ -30,7 +30,6 @@ const styles = {
         top: '50%',
         transform: 'Translate(-50%, -50%)',
         textAlign: 'center',
-        marginTop: 50
     }
 
 };
@@ -66,15 +65,15 @@ class Authentication extends React.Component {
                             tabTemplateStyle={styles.AuthCont}
                             initialSelectedIndex={1}
                         >
-                            <Tab label="Registration" value="reg">
+                            <Tab label="Registration" value="reg" style={styles.TabsFont}>
                                 <div className="registration">
-                                    <h2>Hello</h2>
+                                    <p>Hello</p>
                                     <Registration/>
                                 </div>
                             </Tab>
-                            <Tab label="Login" value="log">
+                            <Tab label="Login" value="log" style={styles.TabsFont}>
                                 <div className="login">
-                                    <h2>Welcome <span>Back</span></h2>
+                                    <p>Welcome <span>Back</span></p>
                                     <Login/>
                                 </div>
                             </Tab>

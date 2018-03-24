@@ -2,19 +2,10 @@ import React from 'react';
 import  { withRouter } from 'react-router-dom';
 
 class Login extends React.Component {
-    constructor(){
-        super();
-        this.state = {
-            username: '',
-            password: ''
-        }
-    }
-
-    handleSubmit = (e) => {
-        e.preventDefault();
+    handleLog = () => {
         const logData = {
-            login: this.state.username,
-            pass: this.state.password,
+            login: this.login.value,
+            pass: this.pass.value,
         };
         fetch('/api/user/login', {
             headers: {
@@ -27,44 +18,30 @@ class Login extends React.Component {
                 return res.json();
             })
             .then(res => {
-                localStorage.setItem('user',res.check);
-                localStorage.setItem('userName',this.state.username);
+                localStorage.setItem('user', res.check);
                 this.props.history.push('/')
             });
-
-    };
-
-    handleChange = (e) => {
-        let name = e.target.name;
-        this.setState({
-            [name]:e.target.value
-        })
     };
 
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
-                    <div className="inputWrap inputWrapUser">
+                <div className="inputWrap inputWrapUser">
                         <input type="text"
                                placeholder="Username"
-                               value={this.state.username}
+                               ref={el => this.login = el}
                                name="username"
-                               onChange={this.handleChange}
                         />
                     </div>
                     <div className="inputWrap inputWrapPass">
                         <input type="password"
                                placeholder="Password"
-                               value={this.state.password}
+                               ref={el => this.pass = el}
                                name="password"
-                               onChange={this.handleChange}
                         />
                     </div>
-                    <button className="authBtn">Login</button>
-                </form>
+                    <button onClick={this.handleLog} className="authBtn">Login</button>
             </div>
-
         );
     }
 }

@@ -17,14 +17,13 @@ class Registration extends React.Component {
         })
     };
 
-    handleSubmit = () => {
+    handleReg = () => {
         localStorage.setItem("username", JSON.stringify(this.state.username));
-        localStorage.setItem("password", JSON.stringify(this.state.password));
     };
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleReg}>
                 <div className="inputWrap inputWrapUser">
                     <input type="text"
                            placeholder="Username"
@@ -48,3 +47,4 @@ class Registration extends React.Component {
 }
 
 export default withRouter (Registration);
+
