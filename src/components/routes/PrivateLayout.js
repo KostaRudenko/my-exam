@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
+import TopBar from "../organisms/topBar/TopBar";
 
 const PrivateLayout = ({component: Component, ...rest}) => {
     return (
@@ -7,7 +8,8 @@ const PrivateLayout = ({component: Component, ...rest}) => {
             if (localStorage.getItem('user') === 'exist') {
                 return(
                     <div>
-                        <div className="mainCont">
+                        <TopBar/>
+                        <div className="mainContent">
                             <Component {...matchProps} />
                         </div>
                     </div>

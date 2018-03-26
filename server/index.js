@@ -13,7 +13,7 @@ App.post('/api/user/login', (req, res) => {
     const login = req.body.login;
     const pass = req.body.pass;
 
-    if (user.login === login && user.pass === pass){
+    if (user.login === login && user.pass === pass) {
         return res.json({
             check: 'exist'
         })
