@@ -45,11 +45,11 @@ class TopBar extends React.Component {
 
     handleLogout = () => {
         localStorage.clear();
-        this.props.history.push('/authentication')
+        this.props.history.push("/authentication")
     };
 
     handleSettings = () => {
-        this.props.history.push('/settings')
+        this.props.history.push("/settings")
     };
 
     render() {
