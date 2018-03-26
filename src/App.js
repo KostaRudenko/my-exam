@@ -10,6 +10,7 @@ import Raport from './components/pages/raport/Raport';
 import Workflow from  './components/pages/workflow/Workflow';
 import PrivateLayout from './components/routes/PrivateLayout';
 import PublicLayout from "./components/routes/PublicLayout";
+import Settings from "./components/pages/settings/Settings";
 
 class App extends React.Component {
   render() {
@@ -23,6 +24,7 @@ class App extends React.Component {
           <PrivateLayout exact path="/projects" component={Projects} />
           <PrivateLayout exact path="/raport" component={Raport} />
           <PrivateLayout exact path="/workflow" component={Workflow} />
+          <PrivateLayout exact path="/settings" component={Settings} />
 
           <Route component={NotFound} />
         </Switch>

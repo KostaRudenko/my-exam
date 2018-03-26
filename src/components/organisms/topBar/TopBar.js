@@ -58,7 +58,8 @@ class TopBar extends React.Component {
                 background: "#2f3242",
                 display: "flex",
                 alignItems: "center",
-                height: 96
+                height: 96,
+                margin: 0
             },
             flatButtonLabel: {
                 color: "#fff",
@@ -73,14 +74,15 @@ class TopBar extends React.Component {
             },
             notifBadgeSett: {
                 padding: 0,
-                marginLeft: 20
+                marginLeft: 35
             },
             notifBadgeStyle: {
             background: "#2196f3",
             width: 10,
             height: 10,
             top: 13,
-            right: 13
+            right: 7,
+            border: "2px solid #2f3242"
             }
         };
         return(
@@ -104,7 +106,7 @@ class TopBar extends React.Component {
                             labelPosition="before"
                             icon={<FontIcon style={{color: "#aac2ff"}} className="material-icons">add</FontIcon>}
                         />
-                        <IconButton style={{marginLeft: 20}} tooltip="Search">
+                        <IconButton iconStyle={{fontSize: 30}} style={{marginLeft: 35}} tooltip="Search">
                             <FontIcon color={"#fff"} className="material-icons">search</FontIcon>
                         </IconButton>
                         <Badge
@@ -113,11 +115,11 @@ class TopBar extends React.Component {
                             style={style.notifBadgeSett}
                             badgeStyle={this.state.notification ? style.notifBadgeStyle : {display:"none"}}
                         >
-                            <IconButton tooltip="Notifications">
+                            <IconButton iconStyle={{fontSize: 30}} tooltip="Notifications">
                                 <FontIcon color={"#fff"} className="material-icons">notifications_none</FontIcon>
                             </IconButton>
                         </Badge>
-                        <div style={{display: "flex", alignItems: "center", marginLeft: 20}}>
+                        <div style={{display: "flex", alignItems: "center", marginLeft: 35}}>
                             <ListItem
                                 disabled={true}
                                 style={{padding: 0}}

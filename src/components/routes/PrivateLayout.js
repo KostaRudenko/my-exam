@@ -1,6 +1,9 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import TopBar from "../organisms/topBar/TopBar";
+import LeftBar from "../organisms/leftBar/LeftBar";
+import '../../App.css';
+
 
 const PrivateLayout = ({component: Component, ...rest}) => {
     return (
@@ -9,8 +12,11 @@ const PrivateLayout = ({component: Component, ...rest}) => {
                 return(
                     <div>
                         <TopBar/>
-                        <div className="mainContent">
-                            <Component {...matchProps} />
+                        <div className="leftBar-mainContent-wrap">
+                            <LeftBar/>
+                            <div className="mainContent">
+                                <Component {...matchProps} />
+                            </div>
                         </div>
                     </div>
                 );

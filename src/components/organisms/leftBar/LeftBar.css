@@ -1,0 +1,17 @@
+.leftBarNavigation {
+    background: #2f3242;
+    min-height: calc(100vh - 96px);
+}
+
+.leftBarNavigation li {
+    padding: 35px;
+}
+
+.leftBarNavigation i {
+    color: #757da4;
+    font-size: 35px;
+}
+
+.activeNavigation i {
+    color: #fff;
+}
