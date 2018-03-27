@@ -1,6 +1,14 @@
 .leftBar-mainContent-wrap {
     display: flex;
 }
+.App {
+    background: #2b2d3c ;
+}
 .mainContent {
-
+    background: #2b2d3c;
+    /*display: flex;*/
+    /*flex-grow: 1;*/
+    max-width: 1900px;
+    width: 100%;
+    margin: 0 auto;
 }

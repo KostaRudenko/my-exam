@@ -1,0 +1,25 @@
+.salesReport {
+    padding: 30px;
+}
+
+.salesReportHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.salesReportSelectWrap {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.salesReportHeader p {
+    font-size: 24px;
+    color: #fff;
+}
+
+.salesReportHeader span {
+    color: #9ea3b4;
+    margin-right: 30px;
+}

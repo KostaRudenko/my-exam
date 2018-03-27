@@ -1,10 +1,29 @@
 import React from 'react';
+import Box from '../../../components/atoms/box/Box';
+import './Home.css';
+import SalesReportChart from "../../organisms/charts/salesReport/SalesReportChart";
+import HomeCalendar from "../../organisms/calendars/homeCalendar/HomeCalendar";
 
 class Home extends React.Component {
     render() {
+
         return (
-            <div>
-                home
+            <div className="home">
+                <div className="bottomBoxWrap">
+                    <div>
+                        <Box>
+                            <div className="salesReportWrap">
+                                <SalesReportChart />
+                            </div>
+                        </Box>
+                    </div>
+                    <div>
+                        <Box>
+                            <HomeCalendar />
+                        </Box>
+                    </div>
+                </div>
+
             </div>
         )
     }

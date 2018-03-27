@@ -1,0 +1,25 @@
+.selectWrap {
+    position: relative;
+    width: 150px;
+    border: 1px solid #2f3242;
+    border-radius: 100px;
+}
+
+.selectWrap select {
+    color: #9ea3b4;
+    background: #2f3242;
+    width: 150px;
+    outline: none;
+    -webkit-appearance: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 100px;
+    font: 500 14px/14px 'Roboto', sans-serif;
+}
+
+.selectWrap .arrow {
+    position: absolute;
+    right: 20px;
+    bottom: 7px;
+
+}

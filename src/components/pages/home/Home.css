@@ -1,0 +1,11 @@
+.home {
+    padding: 60px 20px 20px 60px;
+}
+.bottomBoxWrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.salesReportWrap {
+    width: 650px;
+}
