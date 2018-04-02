@@ -5,7 +5,6 @@ import Authentication from "./components/pages/authentication/Authentication";
 import NotFound from './components/routes/NotFound';
 import Home from './components/pages/home/Home';
 import Inbox from './components/pages/inbox/Inbox';
-import Projects from './components/pages/projects/Projects';
 import Raport from './components/pages/raport/Raport';
 import Workflow from  './components/pages/workflow/Workflow';
 import PrivateLayout from './components/routes/PrivateLayout';
@@ -21,11 +20,9 @@ class App extends React.Component {
 
           <PrivateLayout exact path="/" component={Home }/>
           <PrivateLayout exact path="/inbox" component={Inbox} />
-          <PrivateLayout exact path="/projects" component={Projects} />
-          <PrivateLayout exact path="/raport" component={Raport} />
           <PrivateLayout exact path="/workflow" component={Workflow} />
+          <PrivateLayout exact path="/raport" component={Raport} />
           <PrivateLayout exact path="/settings" component={Settings} />
-
           <Route component={NotFound} />
         </Switch>
       </div>

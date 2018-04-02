@@ -1,0 +1,41 @@
+.workflowHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    background: #2481ce;
+}
+.workflowSelectWrap {
+    display: flex;
+    align-items: center;
+}
+.workflowSelectWrap span {
+    color: #fff;
+    margin-right: 30px;
+}
+.workflowSelectWrap select {
+    color: #fff;
+    background: #2481ce;
+}
+.workflowSelectWrap .arrow i {
+    color: #fff;
+}
+
+.workflowTabsList {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.workflowTabsList li {
+    cursor: pointer;
+}
+.workflowTabsList li:first-child {
+    margin-right: 30px;
+}
+
+.allProjects-active {
+    color: #fff;
+}
+.dragNDrop-active {
+    color: #fff;
+}

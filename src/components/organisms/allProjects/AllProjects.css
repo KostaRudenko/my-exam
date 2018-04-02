@@ -1,0 +1,19 @@
+.projectTitle {
+
+}
+
+.page-item.active .page-link {
+    background: #9ea3b4;
+    border-color: #9ea3b4;
+    color: #2b2d3c;
+}
+.page-link {
+    background: #3a3e52;
+    border-color: #3a3e52;
+    color: #9ea3b4;
+}
+.page-link:hover {
+    background: #9ea3b4;
+    border-color: #9ea3b4;
+    color: #2b2d3c;
+}

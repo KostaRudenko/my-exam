@@ -47,14 +47,14 @@ class LeftBar extends React.Component {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/projects" exact activeClassName="activeNavigation">
-                        <IconButton style={style.iconBtn} tooltip="Projects">
+                    <NavLink to="/workflow" exact activeClassName="activeNavigation">
+                        <IconButton style={style.iconBtn} tooltip="Workflow">
                             <i className="material-icons">menu</i>
                         </IconButton>
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/workflow" exact activeClassName="activeNavigation">
+                    <NavLink to="/raport" exact activeClassName="activeNavigation">
                         <IconButton style={style.iconBtn} tooltip="Raports">
                             <i className="material-icons">trending_up</i>
                         </IconButton>

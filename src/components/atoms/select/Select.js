@@ -1,6 +1,4 @@
 import  React from 'react';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import faAngleDown from '@fortawesome/fontawesome-free-solid/faAngleDown';
 import './Select.css';
 
 class Select extends React.Component {
@@ -17,7 +15,7 @@ class Select extends React.Component {
                     }
                 </select>
                 <div className="arrow">
-                    <FontAwesomeIcon icon={faAngleDown} style={{color: '#909cb7'}}/>
+                    <i className="material-icons">keyboard_arrow_down</i>
                 </div>
             </div>
         )
