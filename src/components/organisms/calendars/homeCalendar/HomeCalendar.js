@@ -7,7 +7,7 @@ import 'react-day-picker/lib/style.css';
 class HomeCalendar extends React.Component {
     render() {
         return (
-            <div style={{height: "100%", width: "400px"}}>
+            <div style={{width: "445px"}}>
                 <Helmet>
                     <style>{`
                       .DayPicker-Day--today {
@@ -18,14 +18,13 @@ class HomeCalendar extends React.Component {
                       }
                       .DayPicker-Day {
                         color: #fff;
+                        padding: 5px;
                       }
                       .DayPicker {
                         width: 100%;
-                        height: 100%;
                       }
                       .DayPicker-Month {
                         width: 100%;
-                        height: 100%;
                         margin: 0;
                       }
                       .DayPicker-Caption {
@@ -35,10 +34,10 @@ class HomeCalendar extends React.Component {
                         height: 94px;
                         padding: 0;
                         background: #3a3e52;
-                        margin-bottom: 65px;
+                        margin-bottom: 45px;
                       }
                       .DayPicker-NavButton--prev {
-                        margin-right: 280px;
+                        margin-right: 324px;
                       }
                       .DayPicker-NavButton--next {
                         margin-right: 47px;
@@ -52,12 +51,8 @@ class HomeCalendar extends React.Component {
                       .DayPicker-NavButton {
                         top: 39px;
                       }
-                      .DayPicker-Weekday {
-                        padding-bottom: 25px;
-                      }
                       .DayPicker-wrapper {
                         padding: 0;
-                        height: 100%;
                       }
                     `}</style>
                 </Helmet>

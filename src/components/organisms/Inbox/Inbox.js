@@ -40,7 +40,7 @@ class Inbox extends React.Component {
         ];
 
         return (
-            <div style={{width: "400px"}}>
+            <div style={{width: "445px"}}>
                 <div className="inboxHeader">
                     <p>Inbox</p>(<span>{inboxMessageItem.length}</span>)
                 </div>
