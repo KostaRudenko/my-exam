@@ -14,7 +14,8 @@ let projects = [
         progress: 70,
         status: 'Development',
         userName: 'Dominic Lynton',
-        position: 'Front End Dev'
+        position: 'Front End Dev',
+        userAva: 'img/Dominic-Lynton.jpg'
     },
     {
         theme: 'Landing page',
@@ -26,7 +27,8 @@ let projects = [
         progress: 15,
         status: 'Planning',
         userName: 'Lyan Roach',
-        position: 'UX/UI Designer'
+        position: 'UX/UI Designer',
+        userAva: 'img/Lyall-Roach.jpg'
     },
     {
         theme: 'New dashboard',
@@ -38,7 +40,8 @@ let projects = [
         progress: 90,
         status: 'Testing',
         userName: 'Michelle Stewart',
-        position: 'Account'
+        position: 'Account',
+        userAva: 'img/Michelle-Stewart.jpg'
     },
     {
         theme: 'New logo',
@@ -50,7 +53,8 @@ let projects = [
         progress: 40,
         status: 'Design',
         userName: 'Lyan Roach',
-        position: 'UX/UI Designer'
+        position: 'UX/UI Designer',
+        userAva: 'img/Lyall-Roach.jpg'
     },
     {
         theme: 'Landing page',
@@ -62,7 +66,8 @@ let projects = [
         progress: 0,
         status: 'Quened',
         userName: 'Michelle Stewart',
-        position: 'Account'
+        position: 'Account',
+        userAva: 'img/Michelle-Stewart.jpg'
     },
     {
         theme: 'Mobile app',
@@ -74,7 +79,8 @@ let projects = [
         progress: 100,
         status: 'Completed',
         userName: 'Michelle Stewart',
-        position: 'Account'
+        position: 'Account',
+        userAva: 'img/Michelle-Stewart.jpg'
     },
     {
         theme: 'Wordpress theme',
@@ -86,7 +92,8 @@ let projects = [
         progress: 100,
         status: 'Completed',
         userName: 'Michelle Stewart',
-        position: 'Account'
+        position: 'Account',
+        userAva: 'img/Michelle-Stewart.jpg'
     },
     {
         theme: 'Mobile app',
@@ -98,7 +105,8 @@ let projects = [
         progress: 100,
         status: 'Completed',
         userName: 'Michelle Stewart',
-        position: 'Account'
+        position: 'Account',
+        userAva: 'img/Michelle-Stewart.jpg'
     },
     {
         theme: 'Wordpress theme',
@@ -110,7 +118,8 @@ let projects = [
         progress: 100,
         status: 'Completed',
         userName: 'Michelle Stewart',
-        position: 'Account'
+        position: 'Account',
+        userAva: 'img/Michelle-Stewart.jpg'
     },
     {
         theme: 'Landing page',
@@ -122,7 +131,8 @@ let projects = [
         progress: 0,
         status: 'Quened',
         userName: 'Michelle Stewart',
-        position: 'Account'
+        position: 'Account',
+        userAva: 'img/Michelle-Stewart.jpg'
     },
     {
         theme: 'Mobile app',
@@ -134,7 +144,8 @@ let projects = [
         progress: 100,
         status: 'Completed',
         userName: 'Michelle Stewart',
-        position: 'Account'
+        position: 'Account',
+        userAva: 'img/Michelle-Stewart.jpg'
     },
     {
         theme: 'New Website',
@@ -146,7 +157,8 @@ let projects = [
         progress: 70,
         status: 'Development',
         userName: 'Dominic Lynton',
-        position: 'Front End Dev'
+        position: 'Front End Dev',
+        userAva: 'img/Dominic-Lynton.jpg'
     },
     {
         theme: 'Wordpress theme',
@@ -158,7 +170,8 @@ let projects = [
         progress: 100,
         status: 'Completed',
         userName: 'Michelle Stewart',
-        position: 'Account'
+        position: 'Account',
+        userAva: 'img/Michelle-Stewart.jpg'
     },
     {
         theme: 'New Website',
@@ -170,7 +183,8 @@ let projects = [
         progress: 70,
         status: 'Development',
         userName: 'Dominic Lynton',
-        position: 'Front End Dev'
+        position: 'Front End Dev',
+        userAva: 'img/Dominic-Lynton.jpg'
     },
     {
         theme: 'Landing page',
@@ -182,7 +196,8 @@ let projects = [
         progress: 15,
         status: 'Planning',
         userName: 'Lyan Roach',
-        position: 'UX/UI Designer'
+        position: 'UX/UI Designer',
+        userAva: 'img/Lyall-Roach.jpg'
     },
     {
         theme: 'New Website',
@@ -194,7 +209,8 @@ let projects = [
         progress: 70,
         status: 'Development',
         userName: 'Dominic Lynton',
-        position: 'Front End Dev'
+        position: 'Front End Dev',
+        userAva: 'img/Dominic-Lynton.jpg'
     },
     {
         theme: 'Mobile app',
@@ -206,7 +222,8 @@ let projects = [
         progress: 100,
         status: 'Completed',
         userName: 'Michelle Stewart',
-        position: 'Account'
+        position: 'Account',
+        userAva: 'img/Michelle-Stewart.jpg'
     },
     {
         theme: 'New Website',
@@ -218,7 +235,8 @@ let projects = [
         progress: 70,
         status: 'Development',
         userName: 'Dominic Lynton',
-        position: 'Front End Dev'
+        position: 'Front End Dev',
+        userAva: 'img/Dominic-Lynton.jpg'
     },
     {
         theme: 'Landing page',
@@ -230,7 +248,8 @@ let projects = [
         progress: 15,
         status: 'Planning',
         userName: 'Lyan Roach',
-        position: 'UX/UI Designer'
+        position: 'UX/UI Designer',
+        userAva: 'img/Lyall-Roach.jpg'
     },
     {
         theme: 'New dashboard',
@@ -242,7 +261,8 @@ let projects = [
         progress: 90,
         status: 'Testing',
         userName: 'Michelle Stewart',
-        position: 'Account'
+        position: 'Account',
+        userAva: 'img/Michelle-Stewart.jpg'
     },
     {
         theme: 'Wordpress theme',
@@ -254,7 +274,8 @@ let projects = [
         progress: 100,
         status: 'Completed',
         userName: 'Michelle Stewart',
-        position: 'Account'
+        position: 'Account',
+        userAva: 'img/Michelle-Stewart.jpg'
     },
     {
         theme: 'New Website',
@@ -266,7 +287,8 @@ let projects = [
         progress: 70,
         status: 'Development',
         userName: 'Dominic Lynton',
-        position: 'Front End Dev'
+        position: 'Front End Dev',
+        userAva: 'img/Dominic-Lynton.jpg'
     },
     {
         theme: 'New Website',
@@ -278,7 +300,8 @@ let projects = [
         progress: 70,
         status: 'Development',
         userName: 'Dominic Lynton',
-        position: 'Front End Dev'
+        position: 'Front End Dev',
+        userAva: 'img/Dominic-Lynton.jpg'
     },
     {
         theme: 'Landing page',
@@ -290,7 +313,8 @@ let projects = [
         progress: 15,
         status: 'Planning',
         userName: 'Lyan Roach',
-        position: 'UX/UI Designer'
+        position: 'UX/UI Designer',
+        userAva: 'img/Lyall-Roach.jpg'
     },
     {
         theme: 'Landing page',
@@ -302,7 +326,8 @@ let projects = [
         progress: 15,
         status: 'Planning',
         userName: 'Lyan Roach',
-        position: 'UX/UI Designer'
+        position: 'UX/UI Designer',
+        userAva: 'img/Lyall-Roach.jpg'
     },
     {
         theme: 'New Website',
@@ -314,7 +339,8 @@ let projects = [
         progress: 70,
         status: 'Development',
         userName: 'Dominic Lynton',
-        position: 'Front End Dev'
+        position: 'Front End Dev',
+        userAva: 'img/Dominic-Lynton.jpg'
     },
     {
         theme: 'Landing page',
@@ -326,7 +352,8 @@ let projects = [
         progress: 15,
         status: 'Planning',
         userName: 'Lyan Roach',
-        position: 'UX/UI Designer'
+        position: 'UX/UI Designer',
+        userAva: 'img/Lyall-Roach.jpg'
     },
     {
         theme: 'New Website',
@@ -338,7 +365,8 @@ let projects = [
         progress: 70,
         status: 'Development',
         userName: 'Dominic Lynton',
-        position: 'Front End Dev'
+        position: 'Front End Dev',
+        userAva: 'img/Dominic-Lynton.jpg'
     },
     {
         theme: 'Mobile app',
@@ -350,7 +378,8 @@ let projects = [
         progress: 100,
         status: 'Completed',
         userName: 'Michelle Stewart',
-        position: 'Account'
+        position: 'Account',
+        userAva: 'img/Michelle-Stewart.jpg'
     },
     {
         theme: 'New Website',
@@ -362,7 +391,8 @@ let projects = [
         progress: 70,
         status: 'Development',
         userName: 'Dominic Lynton',
-        position: 'Front End Dev'
+        position: 'Front End Dev',
+        userAva: 'img/Dominic-Lynton.jpg'
     },
     {
         theme: 'Wordpress theme',
@@ -374,7 +404,8 @@ let projects = [
         progress: 100,
         status: 'Completed',
         userName: 'Michelle Stewart',
-        position: 'Account'
+        position: 'Account',
+        userAva: 'img/Michelle-Stewart.jpg'
     },
     {
         theme: 'New Website',
@@ -386,7 +417,8 @@ let projects = [
         progress: 70,
         status: 'Development',
         userName: 'Dominic Lynton',
-        position: 'Front End Dev'
+        position: 'Front End Dev',
+        userAva: 'img/Dominic-Lynton.jpg'
     },
     {
         theme: 'Landing page',
@@ -398,7 +430,8 @@ let projects = [
         progress: 15,
         status: 'Planning',
         userName: 'Lyan Roach',
-        position: 'UX/UI Designer'
+        position: 'UX/UI Designer',
+        userAva: 'img/Lyall-Roach.jpg'
     },
     {
         theme: 'New Website',
@@ -410,7 +443,8 @@ let projects = [
         progress: 70,
         status: 'Development',
         userName: 'Dominic Lynton',
-        position: 'Front End Dev'
+        position: 'Front End Dev',
+        userAva: 'img/Dominic-Lynton.jpg'
     },
     {
         theme: 'Mobile app',
@@ -422,7 +456,8 @@ let projects = [
         progress: 100,
         status: 'Completed',
         userName: 'Michelle Stewart',
-        position: 'Account'
+        position: 'Account',
+        userAva: 'img/Michelle-Stewart.jpg'
     },
     {
         theme: 'New Website',
@@ -434,7 +469,8 @@ let projects = [
         progress: 70,
         status: 'Development',
         userName: 'Dominic Lynton',
-        position: 'Front End Dev'
+        position: 'Front End Dev',
+        userAva: 'img/Dominic-Lynton.jpg'
     },
     {
         theme: 'Wordpress theme',
@@ -446,7 +482,8 @@ let projects = [
         progress: 100,
         status: 'Completed',
         userName: 'Michelle Stewart',
-        position: 'Account'
+        position: 'Account',
+        userAva: 'img/Michelle-Stewart.jpg'
     },
     {
         theme: 'New Website',
@@ -458,7 +495,8 @@ let projects = [
         progress: 70,
         status: 'Development',
         userName: 'Dominic Lynton',
-        position: 'Front End Dev'
+        position: 'Front End Dev',
+        userAva: 'img/Dominic-Lynton.jpg'
     },
     {
         theme: 'Wordpress theme',
@@ -470,7 +508,8 @@ let projects = [
         progress: 100,
         status: 'Completed',
         userName: 'Michelle Stewart',
-        position: 'Account'
+        position: 'Account',
+        userAva: 'img/Michelle-Stewart.jpg'
     },
     {
         theme: 'New dashboard',
@@ -482,7 +521,8 @@ let projects = [
         progress: 90,
         status: 'Testing',
         userName: 'Michelle Stewart',
-        position: 'Account'
+        position: 'Account',
+        userAva: 'img/Michelle-Stewart.jpg'
     },
     {
         theme: 'New Website',
@@ -494,7 +534,8 @@ let projects = [
         progress: 70,
         status: 'Development',
         userName: 'Dominic Lynton',
-        position: 'Front End Dev'
+        position: 'Front End Dev',
+        userAva: 'img/Dominic-Lynton.jpg'
     },
     {
         theme: 'Landing page',
@@ -506,7 +547,8 @@ let projects = [
         progress: 15,
         status: 'Planning',
         userName: 'Lyan Roach',
-        position: 'UX/UI Designer'
+        position: 'UX/UI Designer',
+        userAva: 'img/Lyall-Roach.jpg'
     },
     {
         theme: 'New logo',
@@ -518,7 +560,8 @@ let projects = [
         progress: 40,
         status: 'Design',
         userName: 'Lyan Roach',
-        position: 'UX/UI Designer'
+        position: 'UX/UI Designer',
+        userAva: 'img/Lyall-Roach.jpg'
     },
     {
         theme: 'Landing page',
@@ -530,7 +573,8 @@ let projects = [
         progress: 15,
         status: 'Planning',
         userName: 'Lyan Roach',
-        position: 'UX/UI Designer'
+        position: 'UX/UI Designer',
+        userAva: 'img/Lyall-Roach.jpg'
     },
     {
         theme: 'Landing page',
@@ -542,7 +586,8 @@ let projects = [
         progress: 0,
         status: 'Quened',
         userName: 'Michelle Stewart',
-        position: 'Account'
+        position: 'Account',
+        userAva: 'img/Michelle-Stewart.jpg'
     },
     {
         theme: 'Landing page',
@@ -554,7 +599,8 @@ let projects = [
         progress: 15,
         status: 'Planning',
         userName: 'Lyan Roach',
-        position: 'UX/UI Designer'
+        position: 'UX/UI Designer',
+        userAva: 'img/Lyall-Roach.jpg'
     },
     {
         theme: 'New dashboard',
@@ -566,7 +612,8 @@ let projects = [
         progress: 90,
         status: 'Testing',
         userName: 'Michelle Stewart',
-        position: 'Account'
+        position: 'Account',
+        userAva: 'img/Michelle-Stewart.jpg'
     },
     {
         theme: 'New logo',
@@ -578,7 +625,8 @@ let projects = [
         progress: 40,
         status: 'Design',
         userName: 'Lyan Roach',
-        position: 'UX/UI Designer'
+        position: 'UX/UI Designer',
+        userAva: 'img/Lyall-Roach.jpg'
     },
     {
         theme: 'New Website',
@@ -590,7 +638,8 @@ let projects = [
         progress: 70,
         status: 'Development',
         userName: 'Dominic Lynton',
-        position: 'Front End Dev'
+        position: 'Front End Dev',
+        userAva: 'img/Dominic-Lynton.jpg'
     },
     {
         theme: 'Landing page',
@@ -602,7 +651,8 @@ let projects = [
         progress: 15,
         status: 'Planning',
         userName: 'Lyan Roach',
-        position: 'UX/UI Designer'
+        position: 'UX/UI Designer',
+        userAva: 'img/Lyall-Roach.jpg'
     },
 ];
 
@@ -614,6 +664,12 @@ class Workflow extends React.Component {
             projects: []
         }
     }
+
+    componentWillMount() {
+        this.setState({
+            projects: projects
+        })
+    };
 
     tabOnClick = (value) => {
         this.setState({
@@ -687,12 +743,6 @@ class Workflow extends React.Component {
                 projects: Themeforest
             });
         }
-    };
-
-    componentWillMount() {
-        this.setState({
-            projects: projects
-        })
     };
 
     render() {

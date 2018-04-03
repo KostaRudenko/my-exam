@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 60px;
+    padding: 20px 40px;
     background: #2481ce;
 }
 .workflowSelectWrap {
@@ -12,6 +12,8 @@
 .workflowSelectWrap span {
     color: #fff;
     margin-right: 30px;
+    font-size: 16px;
+    line-height: 17px;
 }
 .workflowSelectWrap select {
     color: #fff;
@@ -39,3 +41,12 @@
 .dragNDrop-active {
     color: #fff;
 }
+
+/*.workflowBody p {*/
+    /*font: 14px/17px "Montserrat", sans-serif;*/
+    /*color: #fff;*/
+/*}*/
+/*.workflowBody span {*/
+    /*font: 12px/11px "Montserrat", sans-serif;*/
+    /*color: #9ea3b4;*/
+/*}*/
