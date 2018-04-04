@@ -80,8 +80,7 @@ class AllProjects extends React.Component {
                                 <IconButton>
                                     <FontIcon color={"#9ea3b4"} className="material-icons">more_vert</FontIcon>
                                 </IconButton>
-                            }
-                        >
+                            }>
                             <MenuItem primaryText="Send Message" />
                             <MenuItem primaryText="Delete" />
                         </IconMenu>
@@ -106,14 +105,14 @@ class AllProjects extends React.Component {
                     tableStyle={{border: 0}}
                     data={this.props.data}
                     pagination
-                    options={options}>
+                    options={options}
+                >
                     <TableHeaderColumn
                         dataField="userName"
                         dataFormat={this.projectTitle}
                         thStyle={{border: "none"}}
                         isKey
                         tdStyle={{verticalAlign: "middle", border: "none"}}
-
                     >
                         Project title
                     </TableHeaderColumn>
@@ -123,7 +122,6 @@ class AllProjects extends React.Component {
                         thStyle={{border: "none"}}
                         dataFormat={this.value}
                         tdStyle={{verticalAlign: "middle", border: "none"}}
-
                     >
                         Value
                     </TableHeaderColumn>
@@ -133,7 +131,6 @@ class AllProjects extends React.Component {
                         thStyle={{border: "none"}}
                         dataFormat={this.deadline}
                         tdStyle={{verticalAlign: "middle", border: "none"}}
-
                     >
                         Deadline
                     </TableHeaderColumn>
@@ -143,7 +140,6 @@ class AllProjects extends React.Component {
                         thStyle={{border: "none"}}
                         dataFormat={this.timeSpent}
                         tdStyle={{verticalAlign: "middle", border: "none"}}
-
                     >
                         Time spent
                     </TableHeaderColumn>
@@ -153,7 +149,6 @@ class AllProjects extends React.Component {
                         thStyle={{border: "none"}}
                         dataFormat={this.progress}
                         tdStyle={{border: "none", verticalAlign: "middle"}}
-
                     >
                         Progress
                     </TableHeaderColumn>
@@ -163,7 +158,6 @@ class AllProjects extends React.Component {
                         thStyle={{border: "none"}}
                         dataFormat={this.status}
                         tdStyle={{verticalAlign: "middle", border: "none"}}
-
                     >
                         Status
                     </TableHeaderColumn>
