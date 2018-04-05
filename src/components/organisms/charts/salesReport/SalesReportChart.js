@@ -87,7 +87,7 @@ class SalesReportChart extends React.Component {
     };
 
     render() {
-        let salesReportSelect = ['Year', 'Month', 'Week' ];
+        let salesReportSelect = ['Year', 'Month', 'Week'];
 
         return (
             <div className="salesReport">
@@ -95,10 +95,10 @@ class SalesReportChart extends React.Component {
                     <p>Sales Report</p>
                     <div className="salesReportSelectWrap">
                         <span>Show:</span>
-                        <Select data={salesReportSelect} onChange={this.onChange}/>
+                        <Select data={salesReportSelect} onChange={this.onChange} />
                     </div>
                 </div>
-                <ReactHighcharts config={SalesReport} ref={(SalesReportChart) => {this.salesReportChart = SalesReportChart}}/>
+                <ReactHighcharts config={SalesReport} ref={(SalesReportChart) => {this.salesReportChart = SalesReportChart}} />
             </div>
         )
     }

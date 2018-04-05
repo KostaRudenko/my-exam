@@ -1,7 +1,8 @@
 import React from 'react';
 import Select from "../../atoms/select/Select";
-import './Workflow.css';
 import AllProjects from "../../organisms/allProjects/AllProjects";
+import './Workflow.css';
+import DragNDrop from "../../organisms/dnd/Dnd";
 
 let projects = [
     {
@@ -668,7 +669,7 @@ class Workflow extends React.Component {
     componentWillMount() {
         this.setState({
             projects: projects
-        })
+        });
     };
 
     tabOnClick = (value) => {
@@ -766,11 +767,14 @@ class Workflow extends React.Component {
                 </div>
                 <div className="workflowBody" style={{padding: "30px 30px 0 60px"}}>
                     {
+
                         this.state.tab === 'allProjects'
                             ?
                             <AllProjects data={this.state.projects}/>
                             :
-                            <div>atata</div>
+                            <div>
+                                <DragNDrop />
+                            </div>
                     }
                 </div>
             </div>

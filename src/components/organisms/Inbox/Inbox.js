@@ -3,8 +3,8 @@ import './Inbox.css';
 import InboxMessages from "./InboxMessages";
 
 class Inbox extends React.Component {
-
     render() {
+
         let inboxMessageItem = [
             {
                 name: 'Michelle Stewart',
@@ -43,7 +43,7 @@ class Inbox extends React.Component {
         return (
             <div style={{width: "445px"}}>
                 <div className="inboxHeader">
-                    <p>Inbox</p>(<span>{inboxMessageItem.length}</span>)
+                    <p>Inbox</p>(<span>{}</span>)
                 </div>
                 <InboxMessages data={inboxMessageItem} />
             </div>
