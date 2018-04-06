@@ -9,25 +9,25 @@ class Home extends React.Component {
     render() {
         return (
             <div className="home">
-                {/*<div className="bottomBoxWrap">*/}
-                    {/*<div>*/}
+                <div className="bottomBoxWrap">
+                    <div>
                         <Box>
                             <div className="salesReportWrap">
                                 <SalesReportChart />
                             </div>
                         </Box>
-                    {/*</div>*/}
-                    {/*<div>*/}
+                    </div>
+                    <div>
                         <Box>
                             <HomeCalendar />
                         </Box>
-                    {/*</div>*/}
-                    {/*<div>*/}
+                    </div>
+                    <div>
                         <Box>
                             <Inbox />
                         </Box>
-                    {/*</div>*/}
-                {/*</div>*/}
+                    </div>
+                </div>
 
             </div>
         )

@@ -2,7 +2,7 @@ import React from 'react';
 import Select from "../../atoms/select/Select";
 import AllProjects from "../../organisms/allProjects/AllProjects";
 import './Workflow.css';
-import DragNDrop from "../../organisms/dnd/Dnd";
+import TrelloDnd from "../../organisms/dnd/trello/TrelloDnd";
 
 let projects = [
     {
@@ -765,15 +765,18 @@ class Workflow extends React.Component {
                         <Select data={workflowTabSelect} onChange={this.onChange} />
                     </div>
                 </div>
-                <div className="workflowBody" style={{padding: "30px 30px 0 60px"}}>
+                <div className="workflowBody">
                     {
 
                         this.state.tab === 'allProjects'
                             ?
-                            <AllProjects data={this.state.projects}/>
+                            <div style={{padding: "30px 30px 0 60px"}}>
+                                <AllProjects data={this.state.projects}/>
+                            </div>
+
                             :
-                            <div>
-                                <DragNDrop />
+                            <div style={{padding: "30px 0 0 60px"}}>
+                                <TrelloDnd />
                             </div>
                     }
                 </div>

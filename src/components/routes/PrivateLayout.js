@@ -11,9 +11,9 @@ const PrivateLayout = ({component: Component, ...rest}) => {
             if (localStorage.getItem('user') === 'exist') {
                 return(
                     <div>
-                        <TopBar/>
+                        <TopBar />
+                        <LeftBar />
                         <div className="leftBar-mainContent-wrap">
-                            <LeftBar/>
                             <div className="mainContent">
                                 <Component {...matchProps} />
                             </div>

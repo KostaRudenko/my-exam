@@ -4,12 +4,13 @@ import IconMenu from 'material-ui/IconMenu';
 import IconButton from 'material-ui/IconButton';
 import FontIcon from 'material-ui/FontIcon';
 import MenuItem from 'material-ui/MenuItem';
+import ProgressBar from "../../atoms/progressBar/ProgressBar";
 
 import 'react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import './AllProjects.css';
-import ProgressBar from "../../atoms/progressBar/ProgressBar";
+
 
 class AllProjects extends React.Component {
     projectTitle = (cell, row) => {
@@ -85,7 +86,6 @@ class AllProjects extends React.Component {
                             <MenuItem primaryText="Delete" />
                         </IconMenu>
                     </div>
-
                 </div>
             </div>
         )

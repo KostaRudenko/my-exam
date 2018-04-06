@@ -1,6 +1,7 @@
 .leftBarNavigation {
     background: #2f3242;
     min-height: calc(100vh - 96px);
+    float: left;
 }
 
 .leftBarNavigation li {
