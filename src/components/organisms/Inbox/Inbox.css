@@ -7,3 +7,6 @@
     font: 400 24px 'Montserrat', sans-serif;
     color: #fff;
 }
+.inboxHeader span {
+    color: #2196f3;
+}

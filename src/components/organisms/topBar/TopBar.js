@@ -3,7 +3,6 @@ import AppBar from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
 import FontIcon from 'material-ui/FontIcon';
 import FlatButton from 'material-ui/FlatButton';
-import Badge from 'material-ui/Badge';
 import { withRouter } from 'react-router-dom';
 import IconMenu from 'material-ui/IconMenu';
 import ListItem from 'material-ui/List/ListItem';
@@ -12,29 +11,20 @@ import Avatar from 'material-ui/Avatar';
 
 import logo from '../../assets/images/virtus-logo.png';
 import topBarAva from '../../assets/images/top-bar-ava.png';
+import NotificationBadge from "../notification/Notification";
 
 class TopBar extends React.Component {
     constructor() {
         super();
         this.state = {
-            notification: false,
-            menu: false,
+            menu: false
         };
-    };
-
-    componentWillMount () {
-        setTimeout(() => {
-            this.setState({
-                notification: true
-            })
-        },3000);
     };
 
     handleClick = () => {
         this.setState({
             menu: true
         })
-
     };
 
     handleClose = () => {
@@ -72,19 +62,8 @@ class TopBar extends React.Component {
                 height: 48,
                 width: 125
             },
-            notifBadgeSett: {
-                padding: 0,
-                marginLeft: 35
-            },
-            notifBadgeStyle: {
-            background: "#2196f3",
-            width: 10,
-            height: 10,
-            top: 13,
-            right: 7,
-            border: "2px solid #2f3242"
-            }
         };
+
         return(
             <AppBar
                 style={style.appBarStyle}
@@ -109,16 +88,7 @@ class TopBar extends React.Component {
                         <IconButton iconStyle={{fontSize: 30}} style={{marginLeft: 35}} tooltip="Search">
                             <FontIcon color={"#fff"} className="material-icons">search</FontIcon>
                         </IconButton>
-                        <Badge
-                            badgeContent={''}
-                            secondary={true}
-                            style={style.notifBadgeSett}
-                            badgeStyle={this.state.notification ? style.notifBadgeStyle : {display:"none"}}
-                        >
-                            <IconButton iconStyle={{fontSize: 30}} tooltip="Notifications">
-                                <FontIcon color={"#fff"} className="material-icons">notifications_none</FontIcon>
-                            </IconButton>
-                        </Badge>
+                        <NotificationBadge />
                         <div style={{display: "flex", alignItems: "center", marginLeft: 35}}>
                             <ListItem
                                 disabled={true}

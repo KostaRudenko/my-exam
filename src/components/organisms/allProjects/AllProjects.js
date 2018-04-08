@@ -11,7 +11,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import './AllProjects.css';
 
-
 class AllProjects extends React.Component {
     projectTitle = (cell, row) => {
         return (

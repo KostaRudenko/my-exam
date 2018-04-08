@@ -1,675 +1,32 @@
 import React from 'react';
 import Select from "../../atoms/select/Select";
 import AllProjects from "../../organisms/allProjects/AllProjects";
-import './Workflow.css';
 import TrelloDnd from "../../organisms/dnd/trello/TrelloDnd";
 
-let projects = [
-    {
-        theme: 'New Website',
-        company: 'Microsoft',
-        price: 2300,
-        deadline: '15 May 2016',
-        deadlineTimeLeft: '10 days left',
-        timeSpent: '40 hours',
-        progress: 70,
-        status: 'Development',
-        userName: 'Dominic Lynton',
-        position: 'Front End Dev',
-        userAva: 'img/Dominic-Lynton.jpg'
-    },
-    {
-        theme: 'Landing page',
-        company: 'Google',
-        price: 1250,
-        deadline: '21 May 2016',
-        deadlineTimeLeft: '23 days left',
-        timeSpent: '7 hours',
-        progress: 15,
-        status: 'Planning',
-        userName: 'Lyan Roach',
-        position: 'UX/UI Designer',
-        userAva: 'img/Lyall-Roach.jpg'
-    },
-    {
-        theme: 'New dashboard',
-        company: 'Symu.co',
-        price: 5100,
-        deadline: '15 May 2016',
-        deadlineTimeLeft: '2 days left',
-        timeSpent: '56 hours',
-        progress: 90,
-        status: 'Testing',
-        userName: 'Michelle Stewart',
-        position: 'Account',
-        userAva: 'img/Michelle-Stewart.jpg'
-    },
-    {
-        theme: 'New logo',
-        company: 'JCD.pl',
-        price: 900,
-        deadline: '15 June 2016',
-        deadlineTimeLeft: '30 days left',
-        timeSpent: '10 hours',
-        progress: 40,
-        status: 'Design',
-        userName: 'Lyan Roach',
-        position: 'UX/UI Designer',
-        userAva: 'img/Lyall-Roach.jpg'
-    },
-    {
-        theme: 'Landing page',
-        company: 'Symu.co',
-        price: 1500,
-        deadline: '8 August 2016',
-        deadlineTimeLeft: '2 months left',
-        timeSpent: '0 hours',
-        progress: 0,
-        status: 'Quened',
-        userName: 'Michelle Stewart',
-        position: 'Account',
-        userAva: 'img/Michelle-Stewart.jpg'
-    },
-    {
-        theme: 'Mobile app',
-        company: 'Facebook',
-        price: 4300,
-        deadline: '5th May 2016',
-        deadlineTimeLeft: 'Completed',
-        timeSpent: '59 hours',
-        progress: 100,
-        status: 'Completed',
-        userName: 'Michelle Stewart',
-        position: 'Account',
-        userAva: 'img/Michelle-Stewart.jpg'
-    },
-    {
-        theme: 'Wordpress theme',
-        company: 'Themeforest',
-        price: 1300,
-        deadline: '2th May 2016',
-        deadlineTimeLeft: 'Completed',
-        timeSpent: '30 hours',
-        progress: 100,
-        status: 'Completed',
-        userName: 'Michelle Stewart',
-        position: 'Account',
-        userAva: 'img/Michelle-Stewart.jpg'
-    },
-    {
-        theme: 'Mobile app',
-        company: 'Facebook',
-        price: 4300,
-        deadline: '5th May 2016',
-        deadlineTimeLeft: 'Completed',
-        timeSpent: '59 hours',
-        progress: 100,
-        status: 'Completed',
-        userName: 'Michelle Stewart',
-        position: 'Account',
-        userAva: 'img/Michelle-Stewart.jpg'
-    },
-    {
-        theme: 'Wordpress theme',
-        company: 'Themeforest',
-        price: 1300,
-        deadline: '2th May 2016',
-        deadlineTimeLeft: 'Completed',
-        timeSpent: '30 hours',
-        progress: 100,
-        status: 'Completed',
-        userName: 'Michelle Stewart',
-        position: 'Account',
-        userAva: 'img/Michelle-Stewart.jpg'
-    },
-    {
-        theme: 'Landing page',
-        company: 'Symu.co',
-        price: 1500,
-        deadline: '8 August 2016',
-        deadlineTimeLeft: '2 months left',
-        timeSpent: '0 hours',
-        progress: 0,
-        status: 'Quened',
-        userName: 'Michelle Stewart',
-        position: 'Account',
-        userAva: 'img/Michelle-Stewart.jpg'
-    },
-    {
-        theme: 'Mobile app',
-        company: 'Facebook',
-        price: 4300,
-        deadline: '5th May 2016',
-        deadlineTimeLeft: 'Completed',
-        timeSpent: '59 hours',
-        progress: 100,
-        status: 'Completed',
-        userName: 'Michelle Stewart',
-        position: 'Account',
-        userAva: 'img/Michelle-Stewart.jpg'
-    },
-    {
-        theme: 'New Website',
-        company: 'Microsoft',
-        price: 2300,
-        deadline: '15 May 2016',
-        deadlineTimeLeft: '10 days left',
-        timeSpent: '40 hours',
-        progress: 70,
-        status: 'Development',
-        userName: 'Dominic Lynton',
-        position: 'Front End Dev',
-        userAva: 'img/Dominic-Lynton.jpg'
-    },
-    {
-        theme: 'Wordpress theme',
-        company: 'Themeforest',
-        price: 1300,
-        deadline: '2th May 2016',
-        deadlineTimeLeft: 'Completed',
-        timeSpent: '30 hours',
-        progress: 100,
-        status: 'Completed',
-        userName: 'Michelle Stewart',
-        position: 'Account',
-        userAva: 'img/Michelle-Stewart.jpg'
-    },
-    {
-        theme: 'New Website',
-        company: 'Microsoft',
-        price: 2300,
-        deadline: '15 May 2016',
-        deadlineTimeLeft: '10 days left',
-        timeSpent: '40 hours',
-        progress: 70,
-        status: 'Development',
-        userName: 'Dominic Lynton',
-        position: 'Front End Dev',
-        userAva: 'img/Dominic-Lynton.jpg'
-    },
-    {
-        theme: 'Landing page',
-        company: 'Google',
-        price: 1250,
-        deadline: '21 May 2016',
-        deadlineTimeLeft: '23 days left',
-        timeSpent: '7 hours',
-        progress: 15,
-        status: 'Planning',
-        userName: 'Lyan Roach',
-        position: 'UX/UI Designer',
-        userAva: 'img/Lyall-Roach.jpg'
-    },
-    {
-        theme: 'New Website',
-        company: 'Microsoft',
-        price: 2300,
-        deadline: '15 May 2016',
-        deadlineTimeLeft: '10 days left',
-        timeSpent: '40 hours',
-        progress: 70,
-        status: 'Development',
-        userName: 'Dominic Lynton',
-        position: 'Front End Dev',
-        userAva: 'img/Dominic-Lynton.jpg'
-    },
-    {
-        theme: 'Mobile app',
-        company: 'Facebook',
-        price: 4300,
-        deadline: '5th May 2016',
-        deadlineTimeLeft: 'Completed',
-        timeSpent: '59 hours',
-        progress: 100,
-        status: 'Completed',
-        userName: 'Michelle Stewart',
-        position: 'Account',
-        userAva: 'img/Michelle-Stewart.jpg'
-    },
-    {
-        theme: 'New Website',
-        company: 'Microsoft',
-        price: 2300,
-        deadline: '15 May 2016',
-        deadlineTimeLeft: '10 days left',
-        timeSpent: '40 hours',
-        progress: 70,
-        status: 'Development',
-        userName: 'Dominic Lynton',
-        position: 'Front End Dev',
-        userAva: 'img/Dominic-Lynton.jpg'
-    },
-    {
-        theme: 'Landing page',
-        company: 'Google',
-        price: 1250,
-        deadline: '21 May 2016',
-        deadlineTimeLeft: '23 days left',
-        timeSpent: '7 hours',
-        progress: 15,
-        status: 'Planning',
-        userName: 'Lyan Roach',
-        position: 'UX/UI Designer',
-        userAva: 'img/Lyall-Roach.jpg'
-    },
-    {
-        theme: 'New dashboard',
-        company: 'Symu.co',
-        price: 5100,
-        deadline: '15 May 2016',
-        deadlineTimeLeft: '2 days left',
-        timeSpent: '56 hours',
-        progress: 90,
-        status: 'Testing',
-        userName: 'Michelle Stewart',
-        position: 'Account',
-        userAva: 'img/Michelle-Stewart.jpg'
-    },
-    {
-        theme: 'Wordpress theme',
-        company: 'Themeforest',
-        price: 1300,
-        deadline: '2th May 2016',
-        deadlineTimeLeft: 'Completed',
-        timeSpent: '30 hours',
-        progress: 100,
-        status: 'Completed',
-        userName: 'Michelle Stewart',
-        position: 'Account',
-        userAva: 'img/Michelle-Stewart.jpg'
-    },
-    {
-        theme: 'New Website',
-        company: 'Microsoft',
-        price: 2300,
-        deadline: '15 May 2016',
-        deadlineTimeLeft: '10 days left',
-        timeSpent: '40 hours',
-        progress: 70,
-        status: 'Development',
-        userName: 'Dominic Lynton',
-        position: 'Front End Dev',
-        userAva: 'img/Dominic-Lynton.jpg'
-    },
-    {
-        theme: 'New Website',
-        company: 'Microsoft',
-        price: 2300,
-        deadline: '15 May 2016',
-        deadlineTimeLeft: '10 days left',
-        timeSpent: '40 hours',
-        progress: 70,
-        status: 'Development',
-        userName: 'Dominic Lynton',
-        position: 'Front End Dev',
-        userAva: 'img/Dominic-Lynton.jpg'
-    },
-    {
-        theme: 'Landing page',
-        company: 'Google',
-        price: 1250,
-        deadline: '21 May 2016',
-        deadlineTimeLeft: '23 days left',
-        timeSpent: '7 hours',
-        progress: 15,
-        status: 'Planning',
-        userName: 'Lyan Roach',
-        position: 'UX/UI Designer',
-        userAva: 'img/Lyall-Roach.jpg'
-    },
-    {
-        theme: 'Landing page',
-        company: 'Google',
-        price: 1250,
-        deadline: '21 May 2016',
-        deadlineTimeLeft: '23 days left',
-        timeSpent: '7 hours',
-        progress: 15,
-        status: 'Planning',
-        userName: 'Lyan Roach',
-        position: 'UX/UI Designer',
-        userAva: 'img/Lyall-Roach.jpg'
-    },
-    {
-        theme: 'New Website',
-        company: 'Microsoft',
-        price: 2300,
-        deadline: '15 May 2016',
-        deadlineTimeLeft: '10 days left',
-        timeSpent: '40 hours',
-        progress: 70,
-        status: 'Development',
-        userName: 'Dominic Lynton',
-        position: 'Front End Dev',
-        userAva: 'img/Dominic-Lynton.jpg'
-    },
-    {
-        theme: 'Landing page',
-        company: 'Google',
-        price: 1250,
-        deadline: '21 May 2016',
-        deadlineTimeLeft: '23 days left',
-        timeSpent: '7 hours',
-        progress: 15,
-        status: 'Planning',
-        userName: 'Lyan Roach',
-        position: 'UX/UI Designer',
-        userAva: 'img/Lyall-Roach.jpg'
-    },
-    {
-        theme: 'New Website',
-        company: 'Microsoft',
-        price: 2300,
-        deadline: '15 May 2016',
-        deadlineTimeLeft: '10 days left',
-        timeSpent: '40 hours',
-        progress: 70,
-        status: 'Development',
-        userName: 'Dominic Lynton',
-        position: 'Front End Dev',
-        userAva: 'img/Dominic-Lynton.jpg'
-    },
-    {
-        theme: 'Mobile app',
-        company: 'Facebook',
-        price: 4300,
-        deadline: '5th May 2016',
-        deadlineTimeLeft: 'Completed',
-        timeSpent: '59 hours',
-        progress: 100,
-        status: 'Completed',
-        userName: 'Michelle Stewart',
-        position: 'Account',
-        userAva: 'img/Michelle-Stewart.jpg'
-    },
-    {
-        theme: 'New Website',
-        company: 'Microsoft',
-        price: 2300,
-        deadline: '15 May 2016',
-        deadlineTimeLeft: '10 days left',
-        timeSpent: '40 hours',
-        progress: 70,
-        status: 'Development',
-        userName: 'Dominic Lynton',
-        position: 'Front End Dev',
-        userAva: 'img/Dominic-Lynton.jpg'
-    },
-    {
-        theme: 'Wordpress theme',
-        company: 'Themeforest',
-        price: 1300,
-        deadline: '2th May 2016',
-        deadlineTimeLeft: 'Completed',
-        timeSpent: '30 hours',
-        progress: 100,
-        status: 'Completed',
-        userName: 'Michelle Stewart',
-        position: 'Account',
-        userAva: 'img/Michelle-Stewart.jpg'
-    },
-    {
-        theme: 'New Website',
-        company: 'Microsoft',
-        price: 2300,
-        deadline: '15 May 2016',
-        deadlineTimeLeft: '10 days left',
-        timeSpent: '40 hours',
-        progress: 70,
-        status: 'Development',
-        userName: 'Dominic Lynton',
-        position: 'Front End Dev',
-        userAva: 'img/Dominic-Lynton.jpg'
-    },
-    {
-        theme: 'Landing page',
-        company: 'Google',
-        price: 1250,
-        deadline: '21 May 2016',
-        deadlineTimeLeft: '23 days left',
-        timeSpent: '7 hours',
-        progress: 15,
-        status: 'Planning',
-        userName: 'Lyan Roach',
-        position: 'UX/UI Designer',
-        userAva: 'img/Lyall-Roach.jpg'
-    },
-    {
-        theme: 'New Website',
-        company: 'Microsoft',
-        price: 2300,
-        deadline: '15 May 2016',
-        deadlineTimeLeft: '10 days left',
-        timeSpent: '40 hours',
-        progress: 70,
-        status: 'Development',
-        userName: 'Dominic Lynton',
-        position: 'Front End Dev',
-        userAva: 'img/Dominic-Lynton.jpg'
-    },
-    {
-        theme: 'Mobile app',
-        company: 'Facebook',
-        price: 4300,
-        deadline: '5th May 2016',
-        deadlineTimeLeft: 'Completed',
-        timeSpent: '59 hours',
-        progress: 100,
-        status: 'Completed',
-        userName: 'Michelle Stewart',
-        position: 'Account',
-        userAva: 'img/Michelle-Stewart.jpg'
-    },
-    {
-        theme: 'New Website',
-        company: 'Microsoft',
-        price: 2300,
-        deadline: '15 May 2016',
-        deadlineTimeLeft: '10 days left',
-        timeSpent: '40 hours',
-        progress: 70,
-        status: 'Development',
-        userName: 'Dominic Lynton',
-        position: 'Front End Dev',
-        userAva: 'img/Dominic-Lynton.jpg'
-    },
-    {
-        theme: 'Wordpress theme',
-        company: 'Themeforest',
-        price: 1300,
-        deadline: '2th May 2016',
-        deadlineTimeLeft: 'Completed',
-        timeSpent: '30 hours',
-        progress: 100,
-        status: 'Completed',
-        userName: 'Michelle Stewart',
-        position: 'Account',
-        userAva: 'img/Michelle-Stewart.jpg'
-    },
-    {
-        theme: 'New Website',
-        company: 'Microsoft',
-        price: 2300,
-        deadline: '15 May 2016',
-        deadlineTimeLeft: '10 days left',
-        timeSpent: '40 hours',
-        progress: 70,
-        status: 'Development',
-        userName: 'Dominic Lynton',
-        position: 'Front End Dev',
-        userAva: 'img/Dominic-Lynton.jpg'
-    },
-    {
-        theme: 'Wordpress theme',
-        company: 'Themeforest',
-        price: 1300,
-        deadline: '2th May 2016',
-        deadlineTimeLeft: 'Completed',
-        timeSpent: '30 hours',
-        progress: 100,
-        status: 'Completed',
-        userName: 'Michelle Stewart',
-        position: 'Account',
-        userAva: 'img/Michelle-Stewart.jpg'
-    },
-    {
-        theme: 'New dashboard',
-        company: 'Symu.co',
-        price: 5100,
-        deadline: '15 May 2016',
-        deadlineTimeLeft: '2 days left',
-        timeSpent: '56 hours',
-        progress: 90,
-        status: 'Testing',
-        userName: 'Michelle Stewart',
-        position: 'Account',
-        userAva: 'img/Michelle-Stewart.jpg'
-    },
-    {
-        theme: 'New Website',
-        company: 'Microsoft',
-        price: 2300,
-        deadline: '15 May 2016',
-        deadlineTimeLeft: '10 days left',
-        timeSpent: '40 hours',
-        progress: 70,
-        status: 'Development',
-        userName: 'Dominic Lynton',
-        position: 'Front End Dev',
-        userAva: 'img/Dominic-Lynton.jpg'
-    },
-    {
-        theme: 'Landing page',
-        company: 'Google',
-        price: 1250,
-        deadline: '21 May 2016',
-        deadlineTimeLeft: '23 days left',
-        timeSpent: '7 hours',
-        progress: 15,
-        status: 'Planning',
-        userName: 'Lyan Roach',
-        position: 'UX/UI Designer',
-        userAva: 'img/Lyall-Roach.jpg'
-    },
-    {
-        theme: 'New logo',
-        company: 'JCD.pl',
-        price: 900,
-        deadline: '15 June 2016',
-        deadlineTimeLeft: '30 days left',
-        timeSpent: '10 hours',
-        progress: 40,
-        status: 'Design',
-        userName: 'Lyan Roach',
-        position: 'UX/UI Designer',
-        userAva: 'img/Lyall-Roach.jpg'
-    },
-    {
-        theme: 'Landing page',
-        company: 'Google',
-        price: 1250,
-        deadline: '21 May 2016',
-        deadlineTimeLeft: '23 days left',
-        timeSpent: '7 hours',
-        progress: 15,
-        status: 'Planning',
-        userName: 'Lyan Roach',
-        position: 'UX/UI Designer',
-        userAva: 'img/Lyall-Roach.jpg'
-    },
-    {
-        theme: 'Landing page',
-        company: 'Symu.co',
-        price: 1500,
-        deadline: '8 August 2016',
-        deadlineTimeLeft: '2 months left',
-        timeSpent: '0 hours',
-        progress: 0,
-        status: 'Quened',
-        userName: 'Michelle Stewart',
-        position: 'Account',
-        userAva: 'img/Michelle-Stewart.jpg'
-    },
-    {
-        theme: 'Landing page',
-        company: 'Google',
-        price: 1250,
-        deadline: '21 May 2016',
-        deadlineTimeLeft: '23 days left',
-        timeSpent: '7 hours',
-        progress: 15,
-        status: 'Planning',
-        userName: 'Lyan Roach',
-        position: 'UX/UI Designer',
-        userAva: 'img/Lyall-Roach.jpg'
-    },
-    {
-        theme: 'New dashboard',
-        company: 'Symu.co',
-        price: 5100,
-        deadline: '15 May 2016',
-        deadlineTimeLeft: '2 days left',
-        timeSpent: '56 hours',
-        progress: 90,
-        status: 'Testing',
-        userName: 'Michelle Stewart',
-        position: 'Account',
-        userAva: 'img/Michelle-Stewart.jpg'
-    },
-    {
-        theme: 'New logo',
-        company: 'JCD.pl',
-        price: 900,
-        deadline: '15 June 2016',
-        deadlineTimeLeft: '30 days left',
-        timeSpent: '10 hours',
-        progress: 40,
-        status: 'Design',
-        userName: 'Lyan Roach',
-        position: 'UX/UI Designer',
-        userAva: 'img/Lyall-Roach.jpg'
-    },
-    {
-        theme: 'New Website',
-        company: 'Microsoft',
-        price: 2300,
-        deadline: '15 May 2016',
-        deadlineTimeLeft: '10 days left',
-        timeSpent: '40 hours',
-        progress: 70,
-        status: 'Development',
-        userName: 'Dominic Lynton',
-        position: 'Front End Dev',
-        userAva: 'img/Dominic-Lynton.jpg'
-    },
-    {
-        theme: 'Landing page',
-        company: 'Google',
-        price: 1250,
-        deadline: '21 May 2016',
-        deadlineTimeLeft: '23 days left',
-        timeSpent: '7 hours',
-        progress: 15,
-        status: 'Planning',
-        userName: 'Lyan Roach',
-        position: 'UX/UI Designer',
-        userAva: 'img/Lyall-Roach.jpg'
-    },
-];
+import './Workflow.css';
 
 class Workflow extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             tab: 'allProjects',
-            projects: []
+            projects: [],
         }
     }
 
     componentWillMount() {
-        this.setState({
-            projects: projects
-        });
+        fetch('/api/user/projects', {
+            headers: {
+                'Content-type': 'application/json'
+            },
+            method: 'get'
+        })
+            .then(res => res.json())
+            .then(res => {
+                this.setState({
+                    projects: res,
+                });
+            })
     };
 
     tabOnClick = (value) => {
@@ -679,71 +36,82 @@ class Workflow extends React.Component {
     };
 
     onChange = (e) => {
-        if (e.target.value === 'All'){
-            this.setState({
-                projects: projects
-            });
-        } if (e.target.value === 'Microsoft') {
-            let Microsoft = projects.filter((projects) => {
-                    return(
-                        projects.company === 'Microsoft'
-                    )
+        let company = e.target.value;
+
+        fetch('/api/user/projects', {
+            headers: {
+                'Content-type': 'application/json'
+            },
+            method: 'get'
+        })
+            .then(res => res.json())
+            .then(res => {
+                if (company === 'All'){
+                    this.setState({
+                        projects: res,
+                    })
+                } if (company === 'Microsoft') {
+                    let Microsoft = res.filter((res) => {
+                            return(
+                                res.company === 'Microsoft'
+                            )
+                        }
+                    );
+                    this.setState({
+                        projects: Microsoft
+                    });
+                } if (company === 'Google') {
+                    let Google = res.filter((res) => {
+                            return(
+                                res.company === 'Google'
+                            )
+                        }
+                    );
+                    this.setState({
+                        projects: Google
+                    });
+                } if (company === 'Symu.co') {
+                    let Symu = res.filter((res) => {
+                            return(
+                                res.company === 'Symu.co'
+                            )
+                        }
+                    );
+                    this.setState({
+                        projects: Symu
+                    });
+                } if (company === 'JCD.pl') {
+                    let JCD = res.filter((res) => {
+                            return(
+                                res.company === 'JCD.pl'
+                            )
+                        }
+                    );
+                    this.setState({
+                        projects: JCD
+                    });
+                } if (company === 'Facebook') {
+                    let Facebook = res.filter((res) => {
+                            return(
+                                res.company === 'Facebook'
+                            )
+                        }
+                    );
+                    this.setState({
+                        projects: Facebook
+                    });
+                } if (company === 'Themeforest') {
+                    let Themeforest = res.filter((res) => {
+                            return(
+                                res.company === 'Themeforest'
+                            )
+                        }
+                    );
+                    this.setState({
+                        projects: Themeforest
+                    });
                 }
-            );
-            this.setState({
-                projects: Microsoft
-            });
-        } if (e.target.value === 'Google') {
-            let Google = projects.filter((projects) => {
-                    return(
-                        projects.company === 'Google'
-                    )
-                }
-            );
-            this.setState({
-                projects: Google
-            });
-        } if (e.target.value === 'Symu.co') {
-            let Symu = projects.filter((projects) => {
-                    return(
-                        projects.company === 'Symu.co'
-                    )
-                }
-            );
-            this.setState({
-                projects: Symu
-            });
-        } if (e.target.value === 'JCD.pl') {
-            let JCD = projects.filter((projects) => {
-                    return(
-                        projects.company === 'JCD.pl'
-                    )
-                }
-            );
-            this.setState({
-                projects: JCD
-            });
-        } if (e.target.value === 'Facebook') {
-            let Facebook= projects.filter((projects) => {
-                    return(
-                        projects.company === 'Facebook'
-                    )
-                }
-            );
-            this.setState({
-                projects: Facebook
-            });
-        } if (e.target.value === 'Themeforest') {
-            let Themeforest= projects.filter((projects) => {
-                    return(
-                        projects.company === 'Themeforest'
-                    )
-                }
-            );
-            this.setState({
-                projects: Themeforest
-            });
-        }
+            })
     };
 
     render() {

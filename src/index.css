@@ -16,3 +16,8 @@ ul {
 p {
   margin-bottom: 0;
 }
+::-webkit-scrollbar { width: 10px; height: 10px;}
+::-webkit-scrollbar-button {  background-color: transparent; }
+::-webkit-scrollbar-track {  background-color: transparent;}
+::-webkit-scrollbar-track-piece { background-color: #9ea3b4; border-radius: 5px}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #2196f3; border-radius: 5px;}

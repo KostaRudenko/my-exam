@@ -1,14 +1,14 @@
 import React from 'react';
 import Board from 'react-trello';
-import './TrelloDnd.css';
 import ProjectsDndHeader from "./ProjectsDndHeader";
 import IconMenu from 'material-ui/IconMenu';
 import IconButton from 'material-ui/IconButton';
 import FontIcon from 'material-ui/FontIcon';
 import MenuItem from 'material-ui/MenuItem';
 
+import './TrelloDnd.css';
 
-const data = {
+const dataDnD = {
     lanes: [
         {
             id: 'lane1',
@@ -201,23 +201,60 @@ const data = {
 
 };
 
+// var numbers = {
+//     la: [
+//         {
+//             card: [
+//                 {
+//                     price: 1
+//                 }
+//             ]
+//         },
+//         {
+//             card: [
+//                 {
+//                     price: 2
+//                 }
+//             ]
+//         },
+//         {
+//             card: [
+//                 {
+//                     price: 3
+//                 }
+//             ]
+//         },
+//         {
+//             card: [
+//                 {
+//                     price: 4
+//                 }
+//             ]
+//         }
+//     ]
+// };
 
-// let array = data.filter((data) => {
-//     return data.price === 'number';
-// });
+// var numbers = [1,2,3,4];
+// var totalAmount = 0;
+//
+// for (var x = 0; x < numbers.length; x++) {
+//
+//     totalAmount += numbers[x];
+// }
+// console.log(totalAmount); //10 (1+2+3+4)
 
-// var arr = ['a','s','ds',4,'wqe',4];
-// var massiv = arr.filter((number) => {
-//     return !isNaN(Number(number));
-// });
-// alert(massiv);
+// let totalAmount = 0;
+// for (let i = 0; i < numbers.price; i++) {
+//     totalAmount += numbers[i];
+// }
+// console.log(totalAmount); //10 (1+2+3+4)
+//
 
-
-// var array = ['a','s','ds',4,'wqe',4];
-// array = array.filter((item) => {
-//     return typeof item === 'number';
-// });
-// console.log(array);
+let totalPrice = 0;
+dataDnD.lanes.filter((e) => {
+    totalPrice += e.cards[0].price;
+});
+console.log(totalPrice);
 
 const CustomCard = props => {
     return (
@@ -228,7 +265,7 @@ const CustomCard = props => {
             <div className="trelloItemTextWrap">
                 <div className="trelloItemText">
                     <p>{props.theme}</p>
-                    <span>Symu.co </span>
+                    <span>{props.company} </span>
                     <span>${props.price}</span>
                 </div>
                 <div>
@@ -253,10 +290,11 @@ const CustomCard = props => {
 };
 
 class TrelloDnd extends React.Component {
+
     render() {
         return (
             <div>
-                <Board data={data}
+                <Board data={dataDnD}
                        draggable
                        customCardLayout
                        customLaneHeader={
