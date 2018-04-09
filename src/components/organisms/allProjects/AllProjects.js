@@ -12,6 +12,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './AllProjects.css';
 
 class AllProjects extends React.Component {
+
     projectTitle = (cell, row) => {
         return (
             <div className="projectTitle">
@@ -58,7 +59,16 @@ class AllProjects extends React.Component {
     status = (cell, row) => {
         return (
             <div className="statusWrap">
-                <p>{row.status}</p>
+                <p>
+                    {
+                        row.progress === 0 ? 'Quened' :
+                            row.progress <= 15 ? 'Planning' :
+                                row.progress <= 40 ? 'Design' :
+                                    row.progress <= 89 ? 'Development' :
+                                        row.progress <= 99 ? 'Testing' :
+                                            row.progress === 100 ? 'Completed' : ''
+                    }
+                </p>
             </div>
         )
     };

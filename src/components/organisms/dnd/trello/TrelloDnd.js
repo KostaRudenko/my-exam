@@ -256,6 +256,16 @@ dataDnD.lanes.filter((e) => {
 });
 console.log(totalPrice);
 
+for (let key in dataDnD.lanes) {
+    // этот код будет вызван для каждого свойства объекта
+    // ..и выведет имя свойства и его значение
+    console.log( "Ключ: " + key + " значение: " + dataDnD.lanes[key].cards[0].price );
+}
+
+for (let i = 0; i < dataDnD.lanes.length; i++) {
+    console.log( dataDnD.lanes[i] );
+}
+
 const CustomCard = props => {
     return (
         <div className="trelloItem">
