@@ -33,7 +33,9 @@ class SalesReportChart extends React.Component {
     }
 
     onChange = (e) => {
-        if (e.target.value === 'Year') {
+        let period = (e.target.value);
+
+        if (period === 'Year') {
             fetch('/api/user/chart/sales-report/last-year', {
                 headers: {
                     'Accept': 'application/json',
@@ -50,7 +52,7 @@ class SalesReportChart extends React.Component {
                     salesReport.series[0].setData(this.state.dataSalesReport);
                 });
         }
-        if (e.target.value === 'Month') {
+        if (period === 'Month') {
             fetch('/api/user/chart/sales-report/last-month', {
                 headers: {
                     'Accept': 'application/json',
@@ -67,7 +69,7 @@ class SalesReportChart extends React.Component {
                     salesReport.series[0].setData(this.state.dataSalesReport);
                 });
         }
-        if (e.target.value === 'Week') {
+        if (period === 'Week') {
             fetch('/api/user/chart/sales-report/last-week', {
                 headers: {
                     'Accept': 'application/json',

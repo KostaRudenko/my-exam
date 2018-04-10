@@ -13,6 +13,60 @@ let salesReport = {
     LastWeek: [16, 3, 40, 2, 50, 28, 20, 33, 50, 19, 41, 13]
 };
 
+//Raport Chart
+let raport = {
+    LastYear: [20, 40, 10, 30, 50, 15, 25],
+    LastMonth: [15, 29, 40, 10, 36, 10, 15],
+    LastWeek: [10, 23, 38 , 19, 25, 12, 1]
+};
+
+//Raport Views Chart
+let raportViews = [
+    LastYear = {
+        data: [75, 25],
+        percent: '75%'
+    },
+    LastMonth = {
+        data: [30, 70],
+        percent: '30%'
+    },
+    LastWeek = {
+        data: [10, 90],
+        percent: '10%'
+    }
+];
+
+//Raport Visitors Chart
+let raportVisitors = [
+    LastYear = {
+        data : [35,65],
+        percent: '35%'
+    },
+    LastMonth = {
+        data : [15,85],
+        percent: '15%'
+    },
+    LastWeek = {
+        data: [5, 95],
+        percent: '5%'
+    }
+];
+
+//Raport Impressions Chart
+let raportImpressions = [
+    LastYear = {
+        data : [62,38],
+        percent: '62%'
+    },
+    LastMonth = {
+        data : [18,82],
+        percent: '18%'
+    },
+    LastWeek = {
+        data: [47, 53],
+        percent: '47%'
+    }
+];
 
 let inboxMessageItem = [
     {
@@ -83,7 +137,6 @@ let projects = [
         deadlineTimeLeft: '10 days left',
         timeSpent: '40 hours',
         progress: 70,
-        status: 'Development',
         userName: 'Dominic Lynton',
         position: 'Front End Dev',
         userAva: 'img/Dominic-Lynton.jpg'
@@ -96,7 +149,6 @@ let projects = [
         deadlineTimeLeft: '23 days left',
         timeSpent: '7 hours',
         progress: 15,
-        status: 'Planning',
         userName: 'Lyan Roach',
         position: 'UX/UI Designer',
         userAva: 'img/Lyall-Roach.jpg'
@@ -109,7 +161,6 @@ let projects = [
         deadlineTimeLeft: '2 days left',
         timeSpent: '56 hours',
         progress: 90,
-        status: 'Testing',
         userName: 'Michelle Stewart',
         position: 'Account',
         userAva: 'img/Michelle-Stewart.jpg'
@@ -122,7 +173,6 @@ let projects = [
         deadlineTimeLeft: '30 days left',
         timeSpent: '10 hours',
         progress: 40,
-        status: 'Design',
         userName: 'Lyan Roach',
         position: 'UX/UI Designer',
         userAva: 'img/Lyall-Roach.jpg'
@@ -135,7 +185,6 @@ let projects = [
         deadlineTimeLeft: '2 months left',
         timeSpent: '0 hours',
         progress: 0,
-        status: 'Quened',
         userName: 'Michelle Stewart',
         position: 'Account',
         userAva: 'img/Michelle-Stewart.jpg'
@@ -148,7 +197,6 @@ let projects = [
         deadlineTimeLeft: 'Completed',
         timeSpent: '59 hours',
         progress: 100,
-        status: 'Completed',
         userName: 'Michelle Stewart',
         position: 'Account',
         userAva: 'img/Michelle-Stewart.jpg'
@@ -161,7 +209,6 @@ let projects = [
         deadlineTimeLeft: 'Completed',
         timeSpent: '30 hours',
         progress: 100,
-        status: 'Completed',
         userName: 'Michelle Stewart',
         position: 'Account',
         userAva: 'img/Michelle-Stewart.jpg'
@@ -174,7 +221,6 @@ let projects = [
         deadlineTimeLeft: 'Completed',
         timeSpent: '59 hours',
         progress: 100,
-        status: 'Completed',
         userName: 'Michelle Stewart',
         position: 'Account',
         userAva: 'img/Michelle-Stewart.jpg'
@@ -187,7 +233,6 @@ let projects = [
         deadlineTimeLeft: 'Completed',
         timeSpent: '30 hours',
         progress: 100,
-        status: 'Completed',
         userName: 'Michelle Stewart',
         position: 'Account',
         userAva: 'img/Michelle-Stewart.jpg'
@@ -200,7 +245,6 @@ let projects = [
         deadlineTimeLeft: '2 months left',
         timeSpent: '0 hours',
         progress: 0,
-        status: 'Quened',
         userName: 'Michelle Stewart',
         position: 'Account',
         userAva: 'img/Michelle-Stewart.jpg'
@@ -213,7 +257,6 @@ let projects = [
         deadlineTimeLeft: 'Completed',
         timeSpent: '59 hours',
         progress: 100,
-        status: 'Completed',
         userName: 'Michelle Stewart',
         position: 'Account',
         userAva: 'img/Michelle-Stewart.jpg'
@@ -226,7 +269,6 @@ let projects = [
         deadlineTimeLeft: '10 days left',
         timeSpent: '40 hours',
         progress: 70,
-        status: 'Development',
         userName: 'Dominic Lynton',
         position: 'Front End Dev',
         userAva: 'img/Dominic-Lynton.jpg'
@@ -239,7 +281,6 @@ let projects = [
         deadlineTimeLeft: 'Completed',
         timeSpent: '30 hours',
         progress: 100,
-        status: 'Completed',
         userName: 'Michelle Stewart',
         position: 'Account',
         userAva: 'img/Michelle-Stewart.jpg'
@@ -252,7 +293,6 @@ let projects = [
         deadlineTimeLeft: '10 days left',
         timeSpent: '40 hours',
         progress: 70,
-        status: 'Development',
         userName: 'Dominic Lynton',
         position: 'Front End Dev',
         userAva: 'img/Dominic-Lynton.jpg'
@@ -265,7 +305,6 @@ let projects = [
         deadlineTimeLeft: '23 days left',
         timeSpent: '7 hours',
         progress: 15,
-        status: 'Planning',
         userName: 'Lyan Roach',
         position: 'UX/UI Designer',
         userAva: 'img/Lyall-Roach.jpg'
@@ -278,7 +317,6 @@ let projects = [
         deadlineTimeLeft: '10 days left',
         timeSpent: '40 hours',
         progress: 70,
-        status: 'Development',
         userName: 'Dominic Lynton',
         position: 'Front End Dev',
         userAva: 'img/Dominic-Lynton.jpg'
@@ -291,7 +329,6 @@ let projects = [
         deadlineTimeLeft: 'Completed',
         timeSpent: '59 hours',
         progress: 100,
-        status: 'Completed',
         userName: 'Michelle Stewart',
         position: 'Account',
         userAva: 'img/Michelle-Stewart.jpg'
@@ -304,7 +341,6 @@ let projects = [
         deadlineTimeLeft: '10 days left',
         timeSpent: '40 hours',
         progress: 70,
-        status: 'Development',
         userName: 'Dominic Lynton',
         position: 'Front End Dev',
         userAva: 'img/Dominic-Lynton.jpg'
@@ -317,7 +353,6 @@ let projects = [
         deadlineTimeLeft: '23 days left',
         timeSpent: '7 hours',
         progress: 15,
-        status: 'Planning',
         userName: 'Lyan Roach',
         position: 'UX/UI Designer',
         userAva: 'img/Lyall-Roach.jpg'
@@ -330,7 +365,6 @@ let projects = [
         deadlineTimeLeft: '2 days left',
         timeSpent: '56 hours',
         progress: 90,
-        status: 'Testing',
         userName: 'Michelle Stewart',
         position: 'Account',
         userAva: 'img/Michelle-Stewart.jpg'
@@ -343,7 +377,6 @@ let projects = [
         deadlineTimeLeft: 'Completed',
         timeSpent: '30 hours',
         progress: 100,
-        status: 'Completed',
         userName: 'Michelle Stewart',
         position: 'Account',
         userAva: 'img/Michelle-Stewart.jpg'
@@ -356,7 +389,6 @@ let projects = [
         deadlineTimeLeft: '10 days left',
         timeSpent: '40 hours',
         progress: 70,
-        status: 'Development',
         userName: 'Dominic Lynton',
         position: 'Front End Dev',
         userAva: 'img/Dominic-Lynton.jpg'
@@ -369,7 +401,6 @@ let projects = [
         deadlineTimeLeft: '10 days left',
         timeSpent: '40 hours',
         progress: 70,
-        status: 'Development',
         userName: 'Dominic Lynton',
         position: 'Front End Dev',
         userAva: 'img/Dominic-Lynton.jpg'
@@ -382,7 +413,6 @@ let projects = [
         deadlineTimeLeft: '23 days left',
         timeSpent: '7 hours',
         progress: 15,
-        status: 'Planning',
         userName: 'Lyan Roach',
         position: 'UX/UI Designer',
         userAva: 'img/Lyall-Roach.jpg'
@@ -395,7 +425,6 @@ let projects = [
         deadlineTimeLeft: '23 days left',
         timeSpent: '7 hours',
         progress: 15,
-        status: 'Planning',
         userName: 'Lyan Roach',
         position: 'UX/UI Designer',
         userAva: 'img/Lyall-Roach.jpg'
@@ -408,7 +437,6 @@ let projects = [
         deadlineTimeLeft: '10 days left',
         timeSpent: '40 hours',
         progress: 70,
-        status: 'Development',
         userName: 'Dominic Lynton',
         position: 'Front End Dev',
         userAva: 'img/Dominic-Lynton.jpg'
@@ -421,7 +449,6 @@ let projects = [
         deadlineTimeLeft: '23 days left',
         timeSpent: '7 hours',
         progress: 15,
-        status: 'Planning',
         userName: 'Lyan Roach',
         position: 'UX/UI Designer',
         userAva: 'img/Lyall-Roach.jpg'
@@ -434,7 +461,6 @@ let projects = [
         deadlineTimeLeft: '10 days left',
         timeSpent: '40 hours',
         progress: 70,
-        status: 'Development',
         userName: 'Dominic Lynton',
         position: 'Front End Dev',
         userAva: 'img/Dominic-Lynton.jpg'
@@ -447,7 +473,6 @@ let projects = [
         deadlineTimeLeft: 'Completed',
         timeSpent: '59 hours',
         progress: 100,
-        status: 'Completed',
         userName: 'Michelle Stewart',
         position: 'Account',
         userAva: 'img/Michelle-Stewart.jpg'
@@ -460,7 +485,6 @@ let projects = [
         deadlineTimeLeft: '10 days left',
         timeSpent: '40 hours',
         progress: 70,
-        status: 'Development',
         userName: 'Dominic Lynton',
         position: 'Front End Dev',
         userAva: 'img/Dominic-Lynton.jpg'
@@ -473,7 +497,6 @@ let projects = [
         deadlineTimeLeft: 'Completed',
         timeSpent: '30 hours',
         progress: 100,
-        status: 'Completed',
         userName: 'Michelle Stewart',
         position: 'Account',
         userAva: 'img/Michelle-Stewart.jpg'
@@ -486,7 +509,6 @@ let projects = [
         deadlineTimeLeft: '10 days left',
         timeSpent: '40 hours',
         progress: 70,
-        status: 'Development',
         userName: 'Dominic Lynton',
         position: 'Front End Dev',
         userAva: 'img/Dominic-Lynton.jpg'
@@ -499,7 +521,6 @@ let projects = [
         deadlineTimeLeft: '23 days left',
         timeSpent: '7 hours',
         progress: 15,
-        status: 'Planning',
         userName: 'Lyan Roach',
         position: 'UX/UI Designer',
         userAva: 'img/Lyall-Roach.jpg'
@@ -512,7 +533,6 @@ let projects = [
         deadlineTimeLeft: '10 days left',
         timeSpent: '40 hours',
         progress: 70,
-        status: 'Development',
         userName: 'Dominic Lynton',
         position: 'Front End Dev',
         userAva: 'img/Dominic-Lynton.jpg'
@@ -525,7 +545,6 @@ let projects = [
         deadlineTimeLeft: 'Completed',
         timeSpent: '59 hours',
         progress: 100,
-        status: 'Completed',
         userName: 'Michelle Stewart',
         position: 'Account',
         userAva: 'img/Michelle-Stewart.jpg'
@@ -538,7 +557,6 @@ let projects = [
         deadlineTimeLeft: '10 days left',
         timeSpent: '40 hours',
         progress: 70,
-        status: 'Development',
         userName: 'Dominic Lynton',
         position: 'Front End Dev',
         userAva: 'img/Dominic-Lynton.jpg'
@@ -551,7 +569,6 @@ let projects = [
         deadlineTimeLeft: 'Completed',
         timeSpent: '30 hours',
         progress: 100,
-        status: 'Completed',
         userName: 'Michelle Stewart',
         position: 'Account',
         userAva: 'img/Michelle-Stewart.jpg'
@@ -564,7 +581,6 @@ let projects = [
         deadlineTimeLeft: '10 days left',
         timeSpent: '40 hours',
         progress: 70,
-        status: 'Development',
         userName: 'Dominic Lynton',
         position: 'Front End Dev',
         userAva: 'img/Dominic-Lynton.jpg'
@@ -577,7 +593,6 @@ let projects = [
         deadlineTimeLeft: 'Completed',
         timeSpent: '30 hours',
         progress: 100,
-        status: 'Completed',
         userName: 'Michelle Stewart',
         position: 'Account',
         userAva: 'img/Michelle-Stewart.jpg'
@@ -590,7 +605,6 @@ let projects = [
         deadlineTimeLeft: '2 days left',
         timeSpent: '56 hours',
         progress: 90,
-        status: 'Testing',
         userName: 'Michelle Stewart',
         position: 'Account',
         userAva: 'img/Michelle-Stewart.jpg'
@@ -603,7 +617,6 @@ let projects = [
         deadlineTimeLeft: '10 days left',
         timeSpent: '40 hours',
         progress: 70,
-        status: 'Development',
         userName: 'Dominic Lynton',
         position: 'Front End Dev',
         userAva: 'img/Dominic-Lynton.jpg'
@@ -616,7 +629,6 @@ let projects = [
         deadlineTimeLeft: '23 days left',
         timeSpent: '7 hours',
         progress: 15,
-        status: 'Planning',
         userName: 'Lyan Roach',
         position: 'UX/UI Designer',
         userAva: 'img/Lyall-Roach.jpg'
@@ -629,7 +641,6 @@ let projects = [
         deadlineTimeLeft: '30 days left',
         timeSpent: '10 hours',
         progress: 40,
-        status: 'Design',
         userName: 'Lyan Roach',
         position: 'UX/UI Designer',
         userAva: 'img/Lyall-Roach.jpg'
@@ -642,7 +653,6 @@ let projects = [
         deadlineTimeLeft: '23 days left',
         timeSpent: '7 hours',
         progress: 15,
-        status: 'Planning',
         userName: 'Lyan Roach',
         position: 'UX/UI Designer',
         userAva: 'img/Lyall-Roach.jpg'
@@ -655,7 +665,6 @@ let projects = [
         deadlineTimeLeft: '2 months left',
         timeSpent: '0 hours',
         progress: 0,
-        status: 'Quened',
         userName: 'Michelle Stewart',
         position: 'Account',
         userAva: 'img/Michelle-Stewart.jpg'
@@ -668,7 +677,6 @@ let projects = [
         deadlineTimeLeft: '23 days left',
         timeSpent: '7 hours',
         progress: 15,
-        status: 'Planning',
         userName: 'Lyan Roach',
         position: 'UX/UI Designer',
         userAva: 'img/Lyall-Roach.jpg'
@@ -681,7 +689,6 @@ let projects = [
         deadlineTimeLeft: '2 days left',
         timeSpent: '56 hours',
         progress: 90,
-        status: 'Testing',
         userName: 'Michelle Stewart',
         position: 'Account',
         userAva: 'img/Michelle-Stewart.jpg'
@@ -694,7 +701,6 @@ let projects = [
         deadlineTimeLeft: '30 days left',
         timeSpent: '10 hours',
         progress: 40,
-        status: 'Design',
         userName: 'Lyan Roach',
         position: 'UX/UI Designer',
         userAva: 'img/Lyall-Roach.jpg'
@@ -707,7 +713,6 @@ let projects = [
         deadlineTimeLeft: '10 days left',
         timeSpent: '40 hours',
         progress: 70,
-        status: 'Development',
         userName: 'Dominic Lynton',
         position: 'Front End Dev',
         userAva: 'img/Dominic-Lynton.jpg'
@@ -720,7 +725,6 @@ let projects = [
         deadlineTimeLeft: '23 days left',
         timeSpent: '7 hours',
         progress: 15,
-        status: 'Planning',
         userName: 'Lyan Roach',
         position: 'UX/UI Designer',
         userAva: 'img/Lyall-Roach.jpg'
@@ -759,6 +763,7 @@ App.get('/api/user/projects', (req, res) => {
     )
 });
 
+//Sales Report Chart
 App.get('/api/user/chart/sales-report/last-year', (req, res) => {
     return res.json(
         salesReport.LastYear
@@ -772,6 +777,76 @@ App.get('/api/user/chart/sales-report/last-month', (req, res) => {
 App.get('/api/user/chart/sales-report/last-week', (req, res) => {
     return res.json(
         salesReport.LastWeek
+    )
+});
+
+//Raport Views Chart
+App.get('/api/user/chart/raport-views/last-year', (req, res) => {
+    return res.json(
+        raportViews[0]
+    )
+});
+App.get('/api/user/chart/raport-views/last-month', (req, res) => {
+    return res.json(
+        raportViews[1]
+    )
+});
+App.get('/api/user/chart/raport-views/last-week', (req, res) => {
+    return res.json(
+        raportViews[2]
+    )
+});
+
+
+//Raport Visitors Chart
+App.get('/api/user/chart/raport-visitors/last-year', (req, res) => {
+    return res.json(
+        raportVisitors[0]
+    )
+});
+App.get('/api/user/chart/raport-visitors/last-month', (req, res) => {
+    return res.json(
+        raportVisitors[1]
+    )
+});
+App.get('/api/user/chart/raport-visitors/last-week', (req, res) => {
+    return res.json(
+        raportVisitors[2]
+    )
+});
+
+//Raport Impressions Chart
+App.get('/api/user/chart/raport-impressions/last-year', (req, res) => {
+    return res.json(
+        raportImpressions[0]
+    )
+});
+App.get('/api/user/chart/raport-impressions/last-month', (req, res) => {
+    return res.json(
+        raportImpressions[1]
+    )
+});
+App.get('/api/user/chart/raport-impressions/last-week', (req, res) => {
+    return res.json(
+        raportImpressions[2]
+    )
+});
+
+
+//Raport Chart
+App.get('/api/user/chart/raport/last-year', (req, res) => {
+    return res.json(
+        raport.LastYear
+    )
+});
+App.get('/api/user/chart/raport/last-month', (req, res) => {
+    return res.json(
+        raport.LastMonth
+    )
+});
+App.get('/api/user/chart/raport/last-week', (req, res) => {
+    return res.json(
+        raport.LastWeek
     )
 });
 

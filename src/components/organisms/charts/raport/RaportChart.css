@@ -1,0 +1,36 @@
+.raportSelectWrap {
+    display: flex;
+    align-items: center;
+}
+
+.raportSelectWrap span {
+    color: #9ea3b4;
+    margin-right: 30px;
+}
+.raportHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.raportChartsWrap {
+    display: flex;
+}
+.raportViewsChartWrap,
+.raportVisitorsChartWrap,
+.raportImpressionsChartWrap {
+    display: flex;
+    align-items: center;
+}
+.raportViewsChartWrap p,
+.raportVisitorsChartWrap p,
+.raportImpressionsChartWrap p {
+    font: 700 18px/26px 'Montserrat', sans-serif;
+    color: #fff;
+}
+.raportViewsChartWrap span,
+.raportVisitorsChartWrap span,
+.raportImpressionsChartWrap span {
+    font: 400 16px/26px 'Montserrat', sans-serif;
+    color: #9ca1b2;
+}

@@ -266,6 +266,8 @@ for (let i = 0; i < dataDnD.lanes.length; i++) {
     console.log( dataDnD.lanes[i] );
 }
 
+console.log(dataDnD.lanes[2].cards);
+
 const CustomCard = props => {
     return (
         <div className="trelloItem">

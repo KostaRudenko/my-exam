@@ -19,7 +19,6 @@ const SalesReportChart = {
         },
         gridLineColor: "#505464",
         tickInterval: 50,
-
     },
     legend: {
         enabled: false
@@ -45,9 +44,8 @@ const SalesReportChart = {
         pointFormat: '<b>{point.y}</b>',
     },
     series: [{
-        data: [],
-
-    }],
+        data: []
+    }]
 };
 
 export default SalesReportChart;

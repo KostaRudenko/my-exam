@@ -62,8 +62,8 @@ class NotificationBadge extends React.Component {
             },
             notifBadgeStyle: {
                 background: "#2196f3",
-                width: 10,
-                height: 10,
+                width: 13,
+                height: 13,
                 top: 13,
                 right: 7,
                 border: "2px solid #2f3242"

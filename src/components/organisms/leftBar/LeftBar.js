@@ -30,8 +30,8 @@ class LeftBar extends React.Component {
             },
             notifBadgeStyle: {
                 background: "#2196f3",
-                width: 10,
-                height: 10,
+                width: 13,
+                height: 13,
                 top: 7,
                 right: 3,
                 border: "2px solid #2f3242"
