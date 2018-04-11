@@ -3,7 +3,8 @@ const RaportChart = {
         type: 'areaspline',
         spacingRight:3,
         spacingLeft:3,
-        backgroundColor: '#2f3242',
+        backgroundColor: '#2b2d3c',
+        height: 500
     },
     title: {
         text: false

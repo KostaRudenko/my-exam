@@ -3,7 +3,7 @@ const RaportViewsChart = {
         type: 'pie',
         height: 110,
         width: 110,
-        backgroundColor: '#2b2d3c'
+        backgroundColor: 'transparent'
     },
     title: {
         text: '',
@@ -18,7 +18,7 @@ const RaportViewsChart = {
     plotOptions: {
         pie: {
             borderColor: false,
-            colors: ['#2196f3', '#9ca1b2'],
+            colors: ['#2196f3', '#3a3e52'],
         },
     },
     series: [{

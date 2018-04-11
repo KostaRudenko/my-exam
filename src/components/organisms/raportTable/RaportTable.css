@@ -1,0 +1,33 @@
+.raportTableWrap p {
+    color: #fff;
+    font: 15px/26px 'Montserrat', sans-serif;
+}
+.raportTableWrap .material-icons {
+    position: absolute;
+}
+.statusWrap {
+    display: flex;
+    align-items: center;
+}
+
+.raportTableWrap {
+    overflow-x: hidden;
+}
+
+.status {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background: #f44336;
+    margin-right: 10px
+}
+
+.activeStatus {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background: #4caf50;
+    margin-right: 10px
+}

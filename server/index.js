@@ -24,15 +24,18 @@ let raport = {
 let raportViews = [
     LastYear = {
         data: [75, 25],
-        percent: '75%'
+        percent: '75%',
+        number: 1300
     },
     LastMonth = {
         data: [30, 70],
-        percent: '30%'
+        percent: '30%',
+        number: 900
     },
     LastWeek = {
         data: [10, 90],
-        percent: '10%'
+        percent: '10%',
+        number: 200
     }
 ];
 
@@ -40,15 +43,18 @@ let raportViews = [
 let raportVisitors = [
     LastYear = {
         data : [35,65],
-        percent: '35%'
+        percent: '35%',
+        number: 800
     },
     LastMonth = {
         data : [15,85],
-        percent: '15%'
+        percent: '15%',
+        number: 358
     },
     LastWeek = {
         data: [5, 95],
-        percent: '5%'
+        percent: '5%',
+        number: 76,
     }
 ];
 
@@ -56,15 +62,18 @@ let raportVisitors = [
 let raportImpressions = [
     LastYear = {
         data : [62,38],
-        percent: '62%'
+        percent: '62%',
+        number: 3800
     },
     LastMonth = {
         data : [18,82],
-        percent: '18%'
+        percent: '18%',
+        number: 1600
     },
     LastWeek = {
         data: [47, 53],
-        percent: '47%'
+        percent: '47%',
+        number: 770
     }
 ];
 
@@ -731,6 +740,41 @@ let projects = [
     },
 ];
 
+let raportTable = [
+    {
+        text: 'Lorem ipsum dolor sit amet tetur',
+        time: '6 days',
+        views: 358000,
+        visitors: 58200,
+        ctr: 25,
+        cpc: 3.02,
+        cpv: 2.52,
+        cpm: 28.35,
+        status: 'Active'
+    },
+    {
+        text: 'Sed do eiusmod tempor',
+        time: '7 hours',
+        views: 1200,
+        visitors: 800,
+        ctr: 10,
+        cpc: 8.45,
+        cpv: 6.13,
+        cpm: 45.22,
+        status: 'Disable'
+    },
+    {
+        text: 'Consectetur adipisicing elit sed',
+        time: '3 days',
+        views: 69000,
+        visitors: 7300,
+        ctr: 19,
+        cpc: 6.22,
+        cpv: 3.90,
+        cpm: 37.80,
+        status: 'Active'
+    }
+];
 
 App.use(bodyParser.json());
 
@@ -747,6 +791,13 @@ App.post('/api/user/login', (req, res) => {
             check: 'not exist'
         })
     }
+});
+
+//Raport Table
+App.get('/api/user/table/raport-table', (req, res) => {
+    return res.json(
+        raportTable
+    )
 });
 
 //Inbox Messages

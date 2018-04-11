@@ -47,7 +47,7 @@ class RaportChart extends React.Component {
                 raportViewsData.series[0].setData(res.data);
                 raportViewsData.setTitle({
                     text: res.percent
-                })
+                });
             });
         fetch('/api/user/chart/raport-visitors/last-year', {
             headers: {
@@ -107,6 +107,7 @@ class RaportChart extends React.Component {
                 },
                 method: 'get'
             })
+
                 .then(res => res.json())
                 .then(res => {
                     let raportViewsData = this.raportViewsChart.getChart();
@@ -276,7 +277,7 @@ class RaportChart extends React.Component {
         let salesReportSelect = ['Year', 'Month', 'Week'];
 
         return (
-            <div>
+            <div style={{position: "relative"}}>
                 <div className="raportHeader">
                     <div className="raportChartsWrap">
                         <div className="raportViewsChartWrap">

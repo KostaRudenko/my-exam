@@ -122,10 +122,14 @@ class Workflow extends React.Component {
                 <div className="workflowHeader">
                     <ul className="workflowTabsList">
                         <li className={this.state.tab === 'allProjects' ? 'allProjects-active' : 'allProjects'}
-                            onClick={() => this.tabOnClick ('allProjects')}> All Projects ({this.state.projects.length})
+                            onClick={() => this.tabOnClick ('allProjects')}
+                        >
+                            All Projects ({this.state.projects.length})
                         </li>
                         <li className={this.state.tab === 'dragNDrop' ? 'dragNDrop-active' : 'dragNDrop'}
-                            onClick={() => this.tabOnClick ('dragNDrop')}> Workflow
+                            onClick={() => this.tabOnClick ('dragNDrop')}
+                        >
+                            Workflow
                         </li>
                     </ul>
                     <div className="workflowSelectWrap">
