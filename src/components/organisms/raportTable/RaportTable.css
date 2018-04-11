@@ -6,28 +6,35 @@
     position: absolute;
 }
 .statusWrap {
-    display: flex;
-    align-items: center;
+    position: relative;
+}
+.statusWrap {
+    padding-left: 20px;
 }
 
 .raportTableWrap {
     overflow-x: hidden;
 }
-
 .status {
+    position: absolute;
     display: block;
     width: 10px;
     height: 10px;
+    left: 0;
+    top: 3px;
     border-radius: 100px;
     background: #f44336;
-    margin-right: 10px
+    margin-right: 10px;
 }
 
 .activeStatus {
+    position: absolute;
     display: block;
     width: 10px;
     height: 10px;
+    left: 0;
+    top: 3px;
     border-radius: 100px;
     background: #4caf50;
-    margin-right: 10px
+    margin-right: 10px;
 }

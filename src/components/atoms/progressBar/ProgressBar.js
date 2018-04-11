@@ -1,6 +1,7 @@
 import React from 'react';
 import LinearProgress from 'material-ui/LinearProgress';
 
+
 class ProgressBar extends React.Component {
     render() {
         let progressBarColor = (

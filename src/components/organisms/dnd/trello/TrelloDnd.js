@@ -251,8 +251,8 @@ const dataDnD = {
 //
 
 let totalPrice = 0;
-dataDnD.lanes.filter((e) => {
-    totalPrice += e.cards[0].price;
+dataDnD.lanes[1].cards.filter((e) => {
+    totalPrice += e.price;
 });
 console.log(totalPrice);
 
@@ -266,7 +266,11 @@ for (let i = 0; i < dataDnD.lanes.length; i++) {
     console.log( dataDnD.lanes[i] );
 }
 
-console.log(dataDnD.lanes[2].cards);
+let sum = 0;
+dataDnD.lanes[3].cards.forEach((e) => {
+    return  sum += e.price
+});
+console.log(sum);
 
 const CustomCard = props => {
     return (
@@ -302,7 +306,6 @@ const CustomCard = props => {
 };
 
 class TrelloDnd extends React.Component {
-
     render() {
         return (
             <div>

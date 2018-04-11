@@ -19,7 +19,7 @@ class ProjectsDndHeader extends React.Component {
                         marginBottom: '30px'
                     }}
                 >
-                    {this.props.cards.length} Project{this.props.cards.length === 1 ?  '' : 's'}
+                    {this.props.cards.length} Project{this.props.cards.length === 1 ?  '' : 's'} ${this.props.cards[0].price}
                 </p>
             </div>
         )

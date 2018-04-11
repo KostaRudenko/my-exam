@@ -100,6 +100,7 @@ class AllProjects extends React.Component {
         )
     };
 
+
     render() {
         const options = {
             sizePerPage: 7,
@@ -109,8 +110,14 @@ class AllProjects extends React.Component {
         return (
             <div>
                 <BootstrapTable
-                    trStyle={{background: '#3a3e52', borderBottom: "10px solid #2b2d3c"}}
-                    headerStyle={{background: "#2b2d3c", color: "#9ea3b4"}}
+                    trStyle={{
+                        background: '#3a3e52',
+                        borderBottom: "10px solid #2b2d3c"
+                    }}
+                    headerStyle={{
+                        background: "#2b2d3c",
+                        color: "#9ea3b4"
+                    }}
                     tableStyle={{border: 0}}
                     data={this.props.data}
                     pagination
@@ -121,7 +128,10 @@ class AllProjects extends React.Component {
                         dataFormat={this.projectTitle}
                         thStyle={{border: "none"}}
                         isKey
-                        tdStyle={{verticalAlign: "middle", border: "none"}}
+                        tdStyle={{
+                            verticalAlign: "middle",
+                            border: "none",
+                        }}
                     >
                         Project title
                     </TableHeaderColumn>
@@ -130,7 +140,10 @@ class AllProjects extends React.Component {
                         dataField="value"
                         thStyle={{border: "none"}}
                         dataFormat={this.value}
-                        tdStyle={{verticalAlign: "middle", border: "none"}}
+                        tdStyle={{
+                            verticalAlign: "middle",
+                            border: "none"
+                        }}
                     >
                         Value
                     </TableHeaderColumn>
@@ -139,7 +152,10 @@ class AllProjects extends React.Component {
                         dataField="deadline"
                         thStyle={{border: "none"}}
                         dataFormat={this.deadline}
-                        tdStyle={{verticalAlign: "middle", border: "none"}}
+                        tdStyle={{
+                            verticalAlign: "middle",
+                            border: "none"
+                        }}
                     >
                         Deadline
                     </TableHeaderColumn>
@@ -148,7 +164,10 @@ class AllProjects extends React.Component {
                         dataField="timeSpent"
                         thStyle={{border: "none"}}
                         dataFormat={this.timeSpent}
-                        tdStyle={{verticalAlign: "middle", border: "none"}}
+                        tdStyle={{
+                            verticalAlign: "middle",
+                            border: "none"
+                        }}
                     >
                         Time spent
                     </TableHeaderColumn>
@@ -157,7 +176,10 @@ class AllProjects extends React.Component {
                         dataField="progress"
                         thStyle={{border: "none"}}
                         dataFormat={this.progress}
-                        tdStyle={{border: "none", verticalAlign: "middle"}}
+                        tdStyle={{
+                            verticalAlign: "middle",
+                            border: "none"
+                        }}
                     >
                         Progress
                     </TableHeaderColumn>
@@ -166,7 +188,10 @@ class AllProjects extends React.Component {
                         dataField="status"
                         thStyle={{border: "none"}}
                         dataFormat={this.status}
-                        tdStyle={{verticalAlign: "middle", border: "none"}}
+                        tdStyle={{
+                            verticalAlign: "middle",
+                            border: "none"
+                        }}
                     >
                         Status
                     </TableHeaderColumn>
@@ -175,7 +200,10 @@ class AllProjects extends React.Component {
                         dataField="assignedTo"
                         thStyle={{border: "none"}}
                         dataFormat={this.assignedTo}
-                        tdStyle={{verticalAlign: "middle", border: "none"}}
+                        tdStyle={{
+                            verticalAlign: "middle",
+                            border: "none"
+                        }}
                         width="300px"
                     >
                         Assigned to
