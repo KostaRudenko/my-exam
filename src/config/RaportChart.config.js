@@ -1,10 +1,17 @@
 const RaportChart = {
     chart: {
         type: 'areaspline',
-        spacingRight:3,
-        spacingLeft:3,
+        spacingRight: 3,
+        spacingLeft: 3,
         backgroundColor: '#2b2d3c',
-        height: 500
+        height: 450,
+    },
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            }
+        }]
     },
     title: {
         text: false
@@ -30,7 +37,8 @@ const RaportChart = {
             style: {
                 color: "#9ca1b2",
                 fontSize: 16,
-            }
+            },
+            y: -10,
         },
     },
     yAxis: {

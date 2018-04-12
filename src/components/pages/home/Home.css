@@ -10,3 +10,7 @@
 .salesReportWrap {
     width: 650px;
 }
+
+.topBoxWrap .box {
+    height: 450px;
+}

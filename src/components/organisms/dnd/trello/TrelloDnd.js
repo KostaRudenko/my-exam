@@ -272,6 +272,9 @@ dataDnD.lanes[3].cards.forEach((e) => {
 });
 console.log(sum);
 
+
+
+
 const CustomCard = props => {
     return (
         <div className="trelloItem">
@@ -318,7 +321,6 @@ class TrelloDnd extends React.Component {
                         style={{
                             background: 'transparent',
                             height: 'calc(100vh - 240px)',
-                            // height: 'auto',
                             display: 'flex',
                             justifyContent: 'space-between',
                         }}

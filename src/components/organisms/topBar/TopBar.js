@@ -64,7 +64,7 @@ class TopBar extends React.Component {
             },
         };
 
-        return(
+        return (
             <AppBar
                 style={style.appBarStyle}
                 iconElementLeft={
@@ -88,7 +88,9 @@ class TopBar extends React.Component {
                         <IconButton iconStyle={{fontSize: 30}} style={{marginLeft: 35}} tooltip="Search">
                             <FontIcon color={"#fff"} className="material-icons">search</FontIcon>
                         </IconButton>
+
                         <NotificationBadge />
+
                         <div style={{display: "flex", alignItems: "center", marginLeft: 35}}>
                             <ListItem
                                 disabled={true}

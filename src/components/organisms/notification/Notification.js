@@ -46,11 +46,12 @@ class NotificationBadge extends React.Component {
         });
     };
 
-    handleClickNotification = (event) => {
-        event.preventDefault();
+    handleClickNotification = (e) => {
+        e.preventDefault();
+
         this.setState({
             openPopover: true,
-            anchorEl: event.currentTarget,
+            anchorEl: e.currentTarget,
         });
     };
 
@@ -75,7 +76,7 @@ class NotificationBadge extends React.Component {
                 badgeContent={''}
                 secondary={true}
                 style={style.notifBadgeSett}
-                badgeStyle={this.state.notification ? style.notifBadgeStyle : {display:"none"}}
+                badgeStyle={this.state.notification ? style.notifBadgeStyle : { display:"none" }}
                 onClick={this.handleClickNotification}
             >
                 <IconButton iconStyle={{fontSize: 30}} tooltip="Notifications">
