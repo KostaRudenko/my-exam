@@ -139,13 +139,11 @@ class Workflow extends React.Component {
                 </div>
                 <div className="workflowBody">
                     {
-
                         this.state.tab === 'allProjects'
                             ?
                             <div style={{padding: "30px 30px 0 60px"}}>
                                 <AllProjects data={this.state.projects}/>
                             </div>
-
                             :
                             <div style={{padding: "30px 0 0 60px"}}>
                                 <TrelloDnd />

@@ -1,0 +1,51 @@
+.inboxHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #2481ce;
+}
+.inboxSelectWrap {
+    display: flex;
+    align-items: center;
+}
+.inboxSelectWrap span {
+    color: #fff;
+    margin-right: 30px;
+    font-size: 16px;
+    line-height: 17px;
+}
+.inboxSelectWrap select {
+    color: #fff;
+    background: #2481ce;
+}
+.inboxSelectWrap .arrow i {
+    color: #fff;
+}
+.inboxTabsList {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.inboxTabsList li i {
+    margin-right: 10px;
+}
+.inboxTabsList li {
+    cursor: pointer;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+}
+.inboxTabsList li:last-child {
+    margin-right: 0;
+}
+.inbox-active,
+.sent-active,
+.trash-active {
+    color: #fff;
+}
+.inbox,
+.sent,
+.trash {
+    color: #2b2d3c;
+}
