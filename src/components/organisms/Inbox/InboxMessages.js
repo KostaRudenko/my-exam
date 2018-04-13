@@ -14,7 +14,8 @@ class InboxMessages extends React.Component {
                                 </div>
                                 <div className="textWrap">
                                     <div className="textWrapHeader">
-                                        <p>{item.name}</p><span style={item.newMessage ? {color: "#2196f3"} : {color: "#9ca1b2"}}>{item.time}</span>
+                                        <p>{item.name}</p>
+                                        <span style={item.newMessage ? {color: "#2196f3"} : {color: "#9ca1b2"}}>{item.time}</span>
                                     </div>
                                     <p>{item.text}</p>
                                 </div>

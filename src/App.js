@@ -4,7 +4,7 @@ import './App.css';
 import Authentication from "./components/pages/authentication/Authentication";
 import NotFound from './components/routes/NotFound';
 import Home from './components/pages/home/Home';
-import Inbox from './components/pages/inbox/Inbox';
+import Inbox from './components/pages/inbox/InboxChat';
 import Raport from './components/pages/raport/Raport';
 import Workflow from  './components/pages/workflow/Workflow';
 import PrivateLayout from './components/routes/PrivateLayout';

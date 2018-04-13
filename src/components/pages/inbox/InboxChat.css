@@ -1,42 +1,42 @@
-.inboxHeader {
+.inboxChatHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
     background: #2481ce;
 }
-.inboxSelectWrap {
+.inboxSelectChatWrap {
     display: flex;
     align-items: center;
 }
-.inboxSelectWrap span {
+.inboxSelectChatWrap span {
     color: #fff;
     margin-right: 30px;
     font-size: 16px;
     line-height: 17px;
 }
-.inboxSelectWrap select {
+.inboxSelectChatWrap select {
     color: #fff;
     background: #2481ce;
 }
-.inboxSelectWrap .arrow i {
+.inboxSelectChatWrap .arrow i {
     color: #fff;
 }
-.inboxTabsList {
+.inboxChatTabsList {
     display: flex;
     align-items: center;
     font-size: 18px;
 }
-.inboxTabsList li i {
+.inboxChatTabsList li i {
     margin-right: 10px;
 }
-.inboxTabsList li {
+.inboxChatTabsList li {
     cursor: pointer;
     margin-right: 40px;
     display: flex;
     align-items: center;
 }
-.inboxTabsList li:last-child {
+.inboxChatTabsList li:last-child {
     margin-right: 0;
 }
 .inbox-active,
@@ -48,4 +48,21 @@
 .sent,
 .trash {
     color: #2b2d3c;
+}
+.inboxChatBody .inboxMessageList li {
+    padding: 30px 10px 30px 30px;
+}
+.inboxChatBody .inboxChatInbox {
+    width: 100%;
+    max-width: 500px;
+}
+.inboxChatMessages {
+    width:50%;
+}
+.inboxChatUserInfo {
+    width: 20%;
+}
+
+.inboxChatBody {
+    display: flex;
 }
