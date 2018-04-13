@@ -1,16 +1,29 @@
 .home {
-    padding: 60px 20px 20px 60px;
+    padding: 25px 20px 0 25px;
 }
 .bottomBoxWrap {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 400px;
+    height: 375px;
 }
 .salesReportWrap {
     width: 650px;
 }
 
 .topBoxWrap .box {
-    height: 450px;
+    height: 443px;
+    width: 100%;
+}
+
+.topBoxWrap {
+    display: flex;
+    justify-content: space-between;
+    height: 425px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.topBoxWrapChart {
+    width: 70%;
+    margin-right: 30px;
 }

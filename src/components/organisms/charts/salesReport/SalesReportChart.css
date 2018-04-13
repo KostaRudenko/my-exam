@@ -1,12 +1,12 @@
 .salesReport {
-    padding: 30px;
+    padding: 25px;
 }
 
 .salesReportHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .salesReportSelectWrap {
     display: flex;
@@ -14,7 +14,7 @@
 }
 
 .salesReportHeader p {
-    font-size: 24px;
+    font-size: 22px;
     color: #fff;
 }
 

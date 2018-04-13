@@ -33,7 +33,7 @@ class HomeProjects extends React.Component {
 
     render() {
         return (
-            <div style={{width: "445px"}}>
+            <div>
                 <div className="homeProjectsHeader">
                     <p>Your Projects</p>
                 </div>

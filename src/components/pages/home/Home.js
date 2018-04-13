@@ -12,12 +12,12 @@ class Home extends React.Component {
         return (
             <div className="home">
                 <div className="topBoxWrap">
-                    <div>
+                    <div className="topBoxWrapChart">
                         <div>
                             <HomeChart />
                         </div>
                     </div>
-                    <div>
+                    <div className="topBoxWrapProject">
                         <Box>
                             <HomeProjects />
                         </Box>

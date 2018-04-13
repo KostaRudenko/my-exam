@@ -2,7 +2,7 @@ const SalesReportChart = {
     chart: {
         type: 'column',
         backgroundColor: '#2f3242',
-        height: 300
+        height: 250
     },
     title: {
         text: false

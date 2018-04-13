@@ -1,9 +1,9 @@
 .homeProjectsHeader {
-    height: 94px;
+    height: 85px;
     background: #3a3e52;
     display: flex;
     align-items: center;
     justify-content: center;
-    font: 400 24px 'Montserrat', sans-serif;
+    font: 400 22px 'Montserrat', sans-serif;
     color: #fff;
 }

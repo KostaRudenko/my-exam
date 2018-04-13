@@ -48,7 +48,7 @@ class TopBar extends React.Component {
                 background: "#2f3242",
                 display: "flex",
                 alignItems: "center",
-                height: 96,
+                height: 90,
                 margin: 0
             },
             flatButtonLabel: {

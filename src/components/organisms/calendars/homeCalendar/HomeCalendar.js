@@ -29,27 +29,21 @@ class HomeCalendar extends React.Component {
                       }
                       .DayPicker-Caption {
                         text-align: center;
-                        font-size: 24px;
+                        font-size: 22px;
                         color: #fff;
-                        height: 94px;
+                        height: 85px;
                         padding: 0;
                         background: #3a3e52;
                         margin-bottom: 45px;
-                      }
-                      .DayPicker-NavButton--prev {
-                        margin-right: 324px;
-                      }
-                      .DayPicker-NavButton--next {
-                        margin-right: 47px;
                       }
                       .DayPicker-Day--outside {
                         color: #9ea3b4;
                       }
                       .DayPicker-Caption > div {
-                        margin-top: 40px;
+                        margin-top: 33px;
                       }
                       .DayPicker-NavButton {
-                        top: 39px;
+                        top: 34px;
                       }
                       .DayPicker-wrapper {
                         padding: 0;
