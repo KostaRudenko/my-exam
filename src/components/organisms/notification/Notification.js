@@ -57,10 +57,6 @@ class NotificationBadge extends React.Component {
 
     render() {
         let style = {
-            notifBadgeSett: {
-                padding: 0,
-                marginLeft: 35
-            },
             notifBadgeStyle: {
                 background: "#2196f3",
                 width: 13,
@@ -75,7 +71,7 @@ class NotificationBadge extends React.Component {
             <Badge
                 badgeContent={''}
                 secondary={true}
-                style={style.notifBadgeSett}
+                className="badge"
                 badgeStyle={this.state.notification ? style.notifBadgeStyle : { display:"none" }}
                 onClick={this.handleClickNotification}
             >
@@ -91,9 +87,10 @@ class NotificationBadge extends React.Component {
                 >
                     <Menu
                         maxHeight={400}
-                        width={400}
+                        width={350}
                         listStyle={{background: '#2f3242'}}
                         style={{border: '2px solid #2b2d3c'}}
+
                     >
                         <InboxMessages data={this.state.inboxMessageItem.slice(0,5)} />
                     </Menu>

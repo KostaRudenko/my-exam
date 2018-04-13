@@ -76,7 +76,6 @@ class InboxChat extends React.Component {
                             <div className="inboxChatBody">
                                 <div className="inboxChatInbox">
                                     <InboxMessages data={this.state.inboxMessageItem.slice(0,4)} />
-                                    <button>123</button>
                                 </div>
                                 <div className="inboxChatMessages">CHAT</div>
                                 <div className="inboxChatUserInfo">User INFO</div>

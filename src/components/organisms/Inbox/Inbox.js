@@ -35,7 +35,7 @@ class Inbox extends React.Component {
 
     render() {
         return (
-            <div style={{width: "445px"}}>
+            <div className="homeInboxWrap">
                 <div className="inboxHeader">
                     <p>Inbox</p>(<span>{this.state.newMsg.length}</span>)
                 </div>

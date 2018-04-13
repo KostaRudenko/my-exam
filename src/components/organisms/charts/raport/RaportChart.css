@@ -16,6 +16,12 @@
     width: 100%;
     z-index: 1;
 }
+
+@media (max-width: 1215px) {
+    .raportHeader {
+        padding: 0;
+    }
+}
 .raportChartsWrap {
     display: flex;
 }
@@ -25,15 +31,43 @@
     display: flex;
     align-items: center;
 }
+
+@media (max-width: 700px) {
+    .raportImpressionsChart,
+    .raportVisitorsChart,
+    .raportViewsChart {
+        display: none;
+    }
+    .raportViewsChartWrap,
+    .raportVisitorsChartWrap,
+    .raportImpressionsChartWrap {
+        margin-right: 20px;
+    }
+}
 .raportViewsChartWrap p,
 .raportVisitorsChartWrap p,
 .raportImpressionsChartWrap p {
     font: 700 18px/26px 'Montserrat', sans-serif;
     color: #fff;
 }
+
+@media (max-width: 415px) {
+    .raportViewsChartWrap p,
+    .raportVisitorsChartWrap p,
+    .raportImpressionsChartWrap p {
+        font-size: 16px;
+    }
+}
 .raportViewsChartWrap span,
 .raportVisitorsChartWrap span,
 .raportImpressionsChartWrap span {
     font: 400 16px/26px 'Montserrat', sans-serif;
     color: #9ca1b2;
+}
+@media (max-width: 415px) {
+    .raportViewsChartWrap span,
+    .raportVisitorsChartWrap span,
+    .raportImpressionsChartWrap span {
+        font-size: 14px;
+    }
 }

@@ -1,6 +1,13 @@
 .salesReport {
     padding: 25px;
 }
+@media (max-width: 414px) {
+    .raportViewsChartWrap span,
+    .raportVisitorsChartWrap span,
+    .raportImpressionsChartWrap span {
+        font-size: 14px;
+    }
+}
 
 .salesReportHeader {
     display: flex;
@@ -8,6 +15,15 @@
     align-items: center;
     margin-bottom: 40px;
 }
+
+@media (max-width: 414px) {
+    .salesReportHeader {
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
 .salesReportSelectWrap {
     display: flex;
     align-items: center;
@@ -21,4 +37,10 @@
 .salesReportHeader span {
     color: #9ea3b4;
     margin-right: 30px;
+}
+
+@media (max-width: 414px) {
+    .salesReportSelectWrap .selectWrap {
+        width: 125px;
+    }
 }

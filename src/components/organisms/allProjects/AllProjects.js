@@ -110,13 +110,10 @@ class AllProjects extends React.Component {
         return (
             <div>
                 <BootstrapTable
+                    tableHeaderClass='allProjTHeader'
                     trStyle={{
                         background: '#3a3e52',
                         borderBottom: "10px solid #2b2d3c"
-                    }}
-                    headerStyle={{
-                        background: "#2b2d3c",
-                        color: "#9ea3b4"
                     }}
                     tableStyle={{border: 0}}
                     data={this.props.data}
@@ -124,6 +121,8 @@ class AllProjects extends React.Component {
                     options={options}
                 >
                     <TableHeaderColumn
+                        columnClassName='td-column-project'
+                        className='td-header-string-project'
                         dataField="userName"
                         dataFormat={this.projectTitle}
                         thStyle={{border: "none"}}
@@ -137,6 +136,8 @@ class AllProjects extends React.Component {
                     </TableHeaderColumn>
 
                     <TableHeaderColumn
+                        columnClassName='td-column-value'
+                        className='td-header-string-value'
                         dataField="value"
                         thStyle={{border: "none"}}
                         dataFormat={this.value}
@@ -149,6 +150,8 @@ class AllProjects extends React.Component {
                     </TableHeaderColumn>
 
                     <TableHeaderColumn
+                        columnClassName='td-column-deadline'
+                        className='td-header-string-deadline'
                         dataField="deadline"
                         thStyle={{border: "none"}}
                         dataFormat={this.deadline}
@@ -161,6 +164,8 @@ class AllProjects extends React.Component {
                     </TableHeaderColumn>
 
                     <TableHeaderColumn
+                        columnClassName='td-column-time'
+                        className='td-header-string-time'
                         dataField="timeSpent"
                         thStyle={{border: "none"}}
                         dataFormat={this.timeSpent}
@@ -173,6 +178,8 @@ class AllProjects extends React.Component {
                     </TableHeaderColumn>
 
                     <TableHeaderColumn
+                        columnClassName='td-column-progress'
+                        className='td-header-string-progress'
                         dataField="progress"
                         thStyle={{border: "none"}}
                         dataFormat={this.progress}
@@ -185,6 +192,8 @@ class AllProjects extends React.Component {
                     </TableHeaderColumn>
 
                     <TableHeaderColumn
+                        columnClassName='td-column-status'
+                        className='td-header-string-status'
                         dataField="status"
                         thStyle={{border: "none"}}
                         dataFormat={this.status}
@@ -197,6 +206,8 @@ class AllProjects extends React.Component {
                     </TableHeaderColumn>
 
                     <TableHeaderColumn
+                        columnClassName='td-column-assigned'
+                        className='td-header-string-assigned'
                         dataField="assignedTo"
                         thStyle={{border: "none"}}
                         dataFormat={this.assignedTo}
@@ -204,7 +215,6 @@ class AllProjects extends React.Component {
                             verticalAlign: "middle",
                             border: "none"
                         }}
-                        width="300px"
                     >
                         Assigned to
                     </TableHeaderColumn>

@@ -1,24 +1,14 @@
 import React from 'react';
+import './TrelloDnd.css';
 
 class ProjectsDndHeader extends React.Component {
     render() {
         return (
             <div>
-                <p style={{
-                        color: "#fff",
-                        fontSize: '18px',
-                        fontFamily: 'Montserrat',
-                    }}
-                >
+                <p className="ProjectsDndHeaderStatus">
                     {this.props.lineHeadTitle}
                 </p>
-                <p style={{
-                        color: "#9ea3b4",
-                        fontSize: '14px',
-                        fontFamily: 'Montserrat',
-                        marginBottom: '30px'
-                    }}
-                >
+                <p className="ProjectsDndHeaderProject">
                     {this.props.cards.length} Project{this.props.cards.length === 1 ?  '' : 's'}
                 </p>
             </div>

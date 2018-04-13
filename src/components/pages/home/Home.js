@@ -32,7 +32,7 @@ class Home extends React.Component {
                             </div>
                         </Box>
                     </div>
-                    <div>
+                    <div className="homeCalendarWrap">
                         <Box>
                             <HomeCalendar />
                         </Box>

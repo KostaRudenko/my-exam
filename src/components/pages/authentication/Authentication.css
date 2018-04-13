@@ -19,6 +19,12 @@
     justify-content: space-between;
     align-items: center;
 }
+@media (max-width: 620px) {
+    .authHeader {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 .logoWrap {
     height: 29px;
     margin-left: 50px;

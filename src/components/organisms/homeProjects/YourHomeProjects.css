@@ -1,7 +1,13 @@
 .yourProjectList li {
-    padding:20px;
+    padding: 20px;
     border-bottom: 2px solid #3a3e52;
 }
+@media (max-width: 440px) {
+    .yourProjectList li {
+        padding: 10px;
+    }
+}
+
 .yourProjectAva {
     width: 42px;
     height: 42px;
@@ -11,6 +17,13 @@
     float: left;
     margin-right: 20px;
 }
+
+@media (max-width: 440px) {
+    .yourProjectAva  {
+        display: none;
+    }
+}
+
 .yourProjectAva img {
     position: absolute;
     left: 50%;

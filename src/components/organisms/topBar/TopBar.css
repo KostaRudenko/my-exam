@@ -1,0 +1,45 @@
+.searchBtnWrap {
+    margin-left: 30px!important;
+}
+@media (max-width: 600px) {
+    .searchBtnWrap {
+        margin-left: 0!important;
+    }
+}
+
+.topBarAvaWrap {
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+}
+
+@media (max-width: 600px) {
+    .topBarAvaWrap {
+        margin-left: 10px!important;
+    }
+}
+
+.topbBarAva {
+    background: transparent!important;
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    .topbBarAva {
+        display: none!important;
+    }
+}
+
+.topBarFlatBtn {
+    border-radius: 100px!important;
+    border: 2px solid #2196f3!important;
+    height: 48px!important;
+    width: 125px!important;
+}
+
+@media (max-width: 600px) {
+    .topBarFlatBtn {
+        height: 35px!important;
+        width: 102px!important;
+        line-height: 0!important;
+    }
+}

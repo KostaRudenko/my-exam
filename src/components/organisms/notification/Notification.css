@@ -1,8 +1,9 @@
-/*.notifBadgeMessages {*/
-    /*width: 400px;*/
-    /*max-height: 400px;*/
-    /*background: #2f3242;*/
-/*}*/
-/*.notifBadgeMessages li {*/
-    /*background: #2f3242;*/
-/*}*/
+.badge {
+    padding: 0!important;
+    margin-left: 35px!important;
+}
+@media (max-width: 600px) {
+    .badge {
+        margin-left: 0!important;
+    }
+}

@@ -9,6 +9,8 @@ import ListItem from 'material-ui/List/ListItem';
 import MenuItem from 'material-ui/MenuItem';
 import Avatar from 'material-ui/Avatar';
 
+import './TopBar.css';
+
 import logo from '../../assets/images/virtus-logo.png';
 import topBarAva from '../../assets/images/top-bar-ava.png';
 import NotificationBadge from "../notification/Notification";
@@ -76,22 +78,22 @@ class TopBar extends React.Component {
                 iconElementRight={
                     <div style={{display: "flex", alignItems: "center"}}>
                         <FlatButton
+                            className="topBarFlatBtn"
                             hoverColor={"#404359"}
                             backgroundColor={"#2f3242"}
                             labelStyle={style.flatButtonLabel}
                             rippleColor={"#fff"}
-                            style={style.flatButton}
                             label="Add"
                             labelPosition="before"
                             icon={<FontIcon style={{color: "#aac2ff"}} className="material-icons">add</FontIcon>}
                         />
-                        <IconButton iconStyle={{fontSize: 30}} style={{marginLeft: 35}} tooltip="Search">
+                        <IconButton className="searchBtnWrap" iconStyle={{fontSize: 30}} tooltip="Search">
                             <FontIcon color={"#fff"} className="material-icons">search</FontIcon>
                         </IconButton>
 
                         <NotificationBadge />
 
-                        <div style={{display: "flex", alignItems: "center", marginLeft: 35}}>
+                        <div className="topBarAvaWrap">
                             <ListItem
                                 disabled={true}
                                 style={{padding: 0}}
@@ -99,7 +101,7 @@ class TopBar extends React.Component {
                                 <Avatar
                                     size={50}
                                     src={topBarAva}
-                                    style={{background: "transparent", cursor: "pointer"}}
+                                    className="topbBarAva"
                                     onClick={this.handleClick}
                                 />
                             </ListItem>

@@ -8,6 +8,12 @@
     padding: 25px;
 }
 
+@media (max-width: 414px) {
+    .leftBarNavigation li {
+        padding: 10px;
+    }
+}
+
 .leftBarNavigation i {
     color: #757da4;
     font-size: 35px;

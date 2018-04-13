@@ -1,9 +1,15 @@
+
 .inboxMessageList li {
     display: inline-block;
     padding: 15px 20px;
     border-bottom: 2px solid #3a3e52;
 }
 
+@media (max-width: 1415px) {
+    .inboxMessageList li {
+        padding: 10px;
+    }
+}
 .avaWrap {
     width: 42px;
     height: 42px;
@@ -13,6 +19,12 @@
     float: left;
     margin-top: 15px;
 }
+@media (max-width: 414px) {
+    .avaWrap {
+       display: none;
+    }
+}
+
 .inboxMessageList img {
     position: absolute;
     left: 50%;
@@ -29,6 +41,13 @@
     font-weight: 400;
     color: #9ca1b2;
 }
+
+@media (max-width: 1415px) {
+    .textWrap p {
+        font-size: 13px;
+    }
+}
+
 .textWrapHeader {
     display: flex;
     justify-content: space-between;
@@ -40,7 +59,18 @@
     color: #fff;
     letter-spacing: 0.33px;
 }
+@media (max-width: 1415px) {
+    .textWrapHeader p {
+        font-size: 12px;
+    }
+}
 .textWrapHeader span {
     font: 400 13px 'Montserrat', sans-serif;
+}
+
+@media (max-width: 1415px) {
+    .textWrapHeader span {
+        font-size: 10px;
+    }
 }
 

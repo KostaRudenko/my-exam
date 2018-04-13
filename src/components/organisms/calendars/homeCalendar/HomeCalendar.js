@@ -7,7 +7,7 @@ import 'react-day-picker/lib/style.css';
 class HomeCalendar extends React.Component {
     render() {
         return (
-            <div style={{width: "445px"}}>
+            <div>
                 <Helmet>
                     <style>{`
                       .DayPicker-Day--today {

@@ -109,7 +109,7 @@ class RaportTable extends React.Component {
 
     status = (cell, row) => {
         return (
-            <div className="statusWrap">
+            <div className="raportStatusWrap">
                 <span className={row.status === 'Active' ? 'activeStatus' : 'status'}> </span>
                 <p>{row.status}</p>
             </div>
@@ -120,26 +120,23 @@ class RaportTable extends React.Component {
         return (
             <div>
                 <BootstrapTable
+                    tableHeaderClass='raportTHeader'
                     trStyle={{
                         background: "#2b2d3c",
                         borderBottom: "1px solid #9ca1b2",
                         height: "70px"
                     }}
-                    headerStyle={{
-                        background: "#3a3e52",
-                        color: "#9ea3b4",
-                        padding: "15px 0",
-                        fontSize: "14px",
-                        fontFamily: "Montserrat"
-                    }}
                     tableStyle={{border: 0}}
                     data={this.state.raportTable}
                 >
                     <TableHeaderColumn
+                        columnClassName='td-column-campaing'
+                        className='td-header-string-campaing'
                         dataField='campaing'
                         dataFormat={this.campaing}
                         thStyle={{border: "none"}}
                         tdStyle={{
+                            whiteSpace: 'normal',
                             verticalAlign: "middle",
                             border: "none"
                         }}
@@ -151,10 +148,13 @@ class RaportTable extends React.Component {
                     </TableHeaderColumn>
 
                     <TableHeaderColumn
+                        columnClassName='td-column-time'
+                        className='td-header-string-time'
                         dataField='time'
                         thStyle={{border: "none"}}
                         dataFormat={this.time}
                         tdStyle={{
+                            whiteSpace: 'normal',
                             verticalAlign: "middle",
                             border: "none"
                         }}
@@ -166,10 +166,13 @@ class RaportTable extends React.Component {
                     </TableHeaderColumn>
 
                     <TableHeaderColumn
+                        columnClassName='td-column-views'
+                        className='td-header-string-views'
                         dataField='views'
                         thStyle={{border: "none"}}
                         dataFormat={this.views}
                         tdStyle={{
+                            whiteSpace: 'normal',
                             verticalAlign: "middle",
                             border: "none"
                         }}
@@ -180,10 +183,13 @@ class RaportTable extends React.Component {
                     </TableHeaderColumn>
 
                     <TableHeaderColumn
+                        columnClassName='td-column-visitors'
+                        className='td-header-string-visitors'
                         dataField='visitors'
                         thStyle={{border: "none"}}
                         dataFormat={this.visitors}
                         tdStyle={{
+                            whiteSpace: 'normal',
                             verticalAlign: "middle",
                             border: "none"
                         }}
@@ -194,10 +200,13 @@ class RaportTable extends React.Component {
                     </TableHeaderColumn>
 
                     <TableHeaderColumn
+                        columnClassName='td-column-ctr'
+                        className='td-header-string-ctr'
                         dataField='ctr'
                         thStyle={{border: "none"}}
                         dataFormat={this.ctr}
                         tdStyle={{
+                            whiteSpace: 'normal',
                             border: "none",
                             verticalAlign: "middle"
                         }}
@@ -208,10 +217,13 @@ class RaportTable extends React.Component {
                     </TableHeaderColumn>
 
                     <TableHeaderColumn
+                        columnClassName='td-column-cpc'
+                        className='td-header-string-cpc'
                         dataField='cpc'
                         thStyle={{border: "none"}}
                         dataFormat={this.cpc}
                         tdStyle={{
+                            whiteSpace: 'normal',
                             verticalAlign: "middle",
                             border: "none"
                         }}
@@ -222,10 +234,13 @@ class RaportTable extends React.Component {
                     </TableHeaderColumn>
 
                     <TableHeaderColumn
+                        columnClassName='td-column-cpv'
+                        className='td-header-string-cpv'
                         dataField='cpv'
                         thStyle={{border: "none"}}
                         dataFormat={this.cpv}
                         tdStyle={{
+                            whiteSpace: 'normal',
                             verticalAlign: "middle",
                             border: "none"
                         }}
@@ -236,10 +251,13 @@ class RaportTable extends React.Component {
                     </TableHeaderColumn>
 
                     <TableHeaderColumn
+                        columnClassName='td-column-cpm'
+                        className='td-header-string-cpm'
                         dataField='cpm'
                         thStyle={{border: "none"}}
                         dataFormat={this.cpm}
                         tdStyle={{
+                            whiteSpace: 'normal',
                             verticalAlign: "middle",
                             border: "none"
                         }}
@@ -250,6 +268,8 @@ class RaportTable extends React.Component {
                     </TableHeaderColumn>
 
                     <TableHeaderColumn
+                        columnClassName='td-column-status-raport'
+                        className='td-header-string-status-raport'
                         dataField='status'
                         thStyle={{border: "none"}}
                         dataFormat={this.status}

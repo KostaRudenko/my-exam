@@ -86,7 +86,7 @@ class HomeChart extends React.Component {
                 <div className="raportHeader">
                     <div className="raportChartsWrap">
                         <div className="raportViewsChartWrap">
-                            <div>
+                            <div className="raportViewsChart">
                                 <ReactHighcharts
                                     config={RaportViewsChart}
                                     ref={(raportViewsChart) => {this.raportViewsChart = raportViewsChart}}
@@ -98,7 +98,7 @@ class HomeChart extends React.Component {
                             </div>
                         </div>
                         <div className="raportVisitorsChartWrap">
-                            <div>
+                            <div className="raportVisitorsChart">
                                 <ReactHighcharts
                                     config={RaportVisitorsChart}
                                     ref={(raportVisitorsChart) => {this.raportVisitorsChart = raportVisitorsChart}}
@@ -110,7 +110,7 @@ class HomeChart extends React.Component {
                             </div>
                         </div>
                         <div className="raportImpressionsChartWrap">
-                            <div>
+                            <div className="raportImpressionsChart">
                                 <ReactHighcharts
                                     config={RaportImpressionsChart}
                                     ref={(raportImpressionsChart) => {this.raportImpressionsChart = raportImpressionsChart}}

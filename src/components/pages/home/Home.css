@@ -4,11 +4,33 @@
 .bottomBoxWrap {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     height: 375px;
 }
+@media (max-width: 1215px) {
+    .bottomBoxWrap {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 .salesReportWrap {
     width: 650px;
+}
+@media (max-width: 1415px) {
+    .salesReportWrap {
+        width: 445px;
+    }
+}
+@media (max-width: 1215px) {
+    .salesReportWrap {
+        width: 445px;
+    }
+}
+@media (max-width: 414px) {
+    .salesReportWrap {
+        width: 270px;
+    }
 }
 
 .topBoxWrap .box {
@@ -23,7 +45,41 @@
     overflow: hidden;
     margin-bottom: 10px;
 }
+@media (max-width: 1215px) {
+    .topBoxWrap {
+        height: auto;
+    }
+}
+@media (max-width: 1215px) {
+    .topBoxWrap {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 .topBoxWrapChart {
     width: 70%;
     margin-right: 30px;
+}
+
+@media (max-width: 1215px) {
+    .topBoxWrapChart {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.homeCalendarWrap {
+    max-width: 445px;
+    width: 100%;
+    min-width: 250px;
+    margin-right: 10px;
+}
+
+.homeCalendarWrap .box {
+    width: 100%;
+}
+
+.bottomBoxWrap .box {
+    margin-right: 10px;
 }

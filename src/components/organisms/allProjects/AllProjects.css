@@ -52,6 +52,18 @@
     font: 14px/17px "Montserrat", sans-serif;
     color: #fff;
 }
+@media (max-width: 1225px) {
+    .projectTitle p,
+    .priceWrap p,
+    .deadLineWrap p,
+    .timeSpentWrap p,
+    .progressBarWrap p,
+    .statusWrap p,
+    .assignedToText p {
+        font-size: 12px;
+    }
+}
+
 .projectTitle span,
 .priceWrap span,
 .deadLineWrap span,
@@ -61,4 +73,77 @@
 .assignedToText span {
     font: 12px/11px "Montserrat", sans-serif;
     color: #9ea3b4;
+}
+@media (max-width: 1225px) {
+    .projectTitle span,
+    .priceWrap span,
+    .deadLineWrap span,
+    .timeSpentWrap span,
+    .progressBarWrap span,
+    .statusWrap span,
+    .assignedToText span {
+       font-size: 10px;
+    }
+}
+.allProjTHeader {
+    background: #2b2d3c;
+    color: #9ea3b4;
+}
+
+@media (max-width: 1225px) {
+    .allProjTHeader {
+        font-size: 12px;
+    }
+}
+
+.td-column-project {
+    width: 160px;
+}
+
+.td-header-string-project {
+    width: 160px;
+}
+
+@media (max-width: 1175px) {
+    .td-column-deadline,
+    .td-header-string-deadline {
+        width: 110px;
+    }
+}
+@media (max-width: 1175px) {
+    .td-column-value,
+    .td-header-string-value {
+        width: 70px;
+    }
+}
+@media (max-width: 1175px) {
+    .td-column-time,
+    .td-header-string-time {
+        width: 102px;
+    }
+}
+
+@media (max-width: 1175px) {
+    .td-column-progress,
+    .td-header-string-progress {
+        width: 120px;
+    }
+}
+
+@media (max-width: 1175px) {
+    .td-column-status,
+    .td-header-string-status {
+        width: 130px;
+    }
+}
+
+.td-column-assigned,
+.td-header-string-assigned {
+    width: 300px;
+}
+@media (max-width: 1175px) {
+    .td-column-assigned,
+    .td-header-string-assigned {
+        width: 250px;
+    }
 }
