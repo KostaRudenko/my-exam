@@ -7,6 +7,15 @@
     color: #9ea3b4;
     margin-right: 30px;
 }
+@media (max-width: 900px) {
+    .raportSelectWrap .selectWrap {
+        width: 110px;
+    }
+    .raportSelectWrap span {
+        margin-right: 10px;
+    }
+}
+
 .raportHeader {
     display: flex;
     align-items: center;
@@ -15,11 +24,12 @@
     position: absolute;
     width: 100%;
     z-index: 1;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 1215px) {
     .raportHeader {
-        padding: 0;
+        padding: 20px;
     }
 }
 .raportChartsWrap {
@@ -33,9 +43,9 @@
 }
 
 @media (max-width: 700px) {
-    .raportImpressionsChart,
-    .raportVisitorsChart,
-    .raportViewsChart {
+    .raportImpressionsChartHome,
+    .raportVisitorsChartHome,
+    .raportViewsChartHome {
         display: none;
     }
     .raportViewsChartWrap,
@@ -69,5 +79,18 @@
     .raportVisitorsChartWrap span,
     .raportImpressionsChartWrap span {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 900px) {
+    .raportViewsChartRaport,
+    .raportVisitorsChartRaport,
+    .raportImpressionsChartRaport {
+        display: none;
+    }
+    .raportViewsChartWrap,
+    .raportVisitorsChartWrap,
+    .raportImpressionsChartWrap {
+        margin-right: 20px;
     }
 }
