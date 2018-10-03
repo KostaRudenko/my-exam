@@ -72,16 +72,24 @@ class InboxChat extends React.Component {
                 </div>
                 <div>
                     {
-                        this.state.tab === 'inbox' ?
+                        this.state.tab === 'inbox'
+                            ?
                             <div className="inboxChatBody">
                                 <div className="inboxChatInbox">
                                     <InboxMessages data={this.state.inboxMessageItem.slice(0,4)} />
                                 </div>
                                 <div className="inboxChatMessages">CHAT</div>
                                 <div className="inboxChatUserInfo">User INFO</div>
-                            </div> :
-                            this.state.tab === 'sent' ? <div>sent</div> :
-                                this.state.tab === 'trash' ? <div>trash</div> : false
+                            </div>
+                            :
+                            this.state.tab === 'sent'
+                                ?
+                                <div>sent</div>
+                                :
+                                this.state.tab === 'trash'
+                                    ?
+                                    <div>trash</div>
+                                    : null
                     }
                 </div>
             </div>

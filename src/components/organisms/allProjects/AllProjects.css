@@ -3,6 +3,12 @@
     border-color: #9ea3b4;
     color: #2b2d3c;
 }
+.react-bs-table-pagination {
+    margin-top: 0;
+}
+.react-bs-table-pagination .row {
+    margin-top: 0 !important;
+}
 .page-link {
     background: #3a3e52;
     border-color: #3a3e52;

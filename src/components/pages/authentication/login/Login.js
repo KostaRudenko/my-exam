@@ -12,7 +12,7 @@ class Login extends React.Component {
                 'Content-type': 'application/json'
             },
             method: 'post',
-            body: JSON.stringify(logData)
+            body: JSON.stringify( logData )
         })
             .then(res => {
                 return res.json();
@@ -29,18 +29,18 @@ class Login extends React.Component {
                 <div className="inputWrap inputWrapUser">
                         <input type="text"
                                placeholder="Username"
-                               ref={el => this.login = el}
+                               ref={ el => this.login = el }
                                name="username"
                         />
                     </div>
                     <div className="inputWrap inputWrapPass">
                         <input type="password"
                                placeholder="Password"
-                               ref={el => this.pass = el}
+                               ref={ el => this.pass = el }
                                name="password"
                         />
                     </div>
-                    <button onClick={this.handleLog} className="authBtn">Login</button>
+                    <button onClick={ this.handleLog } className="authBtn">Login</button>
             </div>
         );
     }

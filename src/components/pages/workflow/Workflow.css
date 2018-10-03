@@ -88,7 +88,7 @@
 }
 
 .workflowBodyProjWrap {
-    padding: 30px 30px 0 60px;
+    padding: 10px 30px 0 30px;
 }
 @media (max-width: 1175px) {
     .workflowBodyProjWrap {
@@ -96,7 +96,7 @@
     }
 }
 .workflowBodyDndWrap {
-    padding: 30px 0 0 60px;
+    padding: 10px 30px 0 30px;
 }
 @media (max-width: 1075px) {
     .workflowBodyDndWrap {

@@ -18,7 +18,7 @@ class App extends React.Component {
         <Switch>
           <PublicLayout path="/authentication" component={Authentication} />
 
-          <PrivateLayout exact path="/" component={Home }/>
+          <PrivateLayout exact path="/" component={Home}/>
           <PrivateLayout exact path="/inbox" component={Inbox} />
           <PrivateLayout exact path="/workflow" component={Workflow} />
           <PrivateLayout exact path="/raport" component={Raport} />

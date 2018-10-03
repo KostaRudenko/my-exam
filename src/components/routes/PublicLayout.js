@@ -6,7 +6,7 @@ const PublicLayout = ({component: Component, ...rest}) => {
         <Route {...rest} render={() => {
             if(localStorage.getItem('user') === 'exist') {
                 return(
-                    <Redirect to="/"/>
+                    <Redirect to="/" />
                 );
             } else {
                 return <Component />
