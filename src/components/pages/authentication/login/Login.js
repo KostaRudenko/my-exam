@@ -28,14 +28,14 @@ class Login extends React.Component {
             <div>
                 <div className="inputWrap inputWrapUser">
                         <input type="text"
-                               placeholder="Username"
+                               placeholder="admin"
                                ref={ el => this.login = el }
                                name="username"
                         />
                     </div>
                     <div className="inputWrap inputWrapPass">
                         <input type="password"
-                               placeholder="Password"
+                               placeholder="admin"
                                ref={ el => this.pass = el }
                                name="password"
                         />
